@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213.06 211.23">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Poppins-ExtraBold, Poppins;
+        font-size: 125.47px;
+        letter-spacing: .05em;
+      }
+
+      .cls-1, .cls-2 {
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: Poppins-Bold, Poppins;
+        font-size: 125.88px;
+        letter-spacing: .05em;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-3" d="m132.75,180.43L97.81,7.03l.11-.6-.27-.19L96.4.05l-7.47-.05-1.27,7.09-.11.09.05.25-21.18,118.19H0v19.08h73.44l19.53-110.65,35.68,177.09c3.25.03,6.49.05,9.74.08,2.89-21.36,5.78-42.72,8.67-64.08h65.99v-19.08h-73.44l-6.87,52.37Z"/>
+    <text class="cls-2" transform="translate(7.55 118.74) scale(.73 1)"><tspan x="0" y="0">Y</tspan></text>
+    <text class="cls-1" transform="translate(147.94 119.25) scale(.73 1)"><tspan x="0" y="0">J</tspan></text>
+  </g>
+</svg>
