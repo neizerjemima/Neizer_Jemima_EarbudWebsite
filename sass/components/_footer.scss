@@ -1,0 +1,33 @@
+
+
+@media screen and (min-width: 1200px) {
+footer {
+    background-color: #000;
+    margin-top: 8px;
+    grid-auto-rows: min-content;
+    
+    .form {
+        grid-column: 2/4;
+    }
+
+    .footerNav {
+        grid-column: 5/7;
+        font-size: 16px;
+        margin-top: 20px;
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+#copyright {
+    color: #fff;
+    background-color: #131313;
+    text-align: center;
+    padding: 7px;
+    font-size: 12px;
+}
+
+}

@@ -1,6 +1,5 @@
 model-viewer {
   width: auto;
-  max-width: 1200px;
   height: 700px;
   background-color: #e4bbbb;
   margin: 0 auto;
@@ -115,18 +114,19 @@ model-viewer > #ar-prompt > img {
   display: none;
 }
 
-.header {
+header {
   position: sticky;
+  height: 72px;
+  background-color: #000;
+}
+header img {
+  width: 48px;
+  height: 48px;
+  margin: 10px 0 0 10px;
 }
 
-#desktop {
-  display: none;
-}
-
-.logo {
-  height: 46px;
-  width: 140px;
-  padding-top: 10px;
+nav {
+  height: 72px;
 }
 
 #button {
@@ -134,7 +134,7 @@ model-viewer > #ar-prompt > img {
   width: 45px;
   margin-top: 8px;
   transition: all 1 ease;
-  color: azure;
+  color: rgb(62, 131, 131);
 }
 
 #burger-con {
@@ -160,7 +160,7 @@ model-viewer > #ar-prompt > img {
 }
 #burger-con ul li a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   font-size: 21px;
 }
 
@@ -173,9 +173,6 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1200px) {
   #button {
     display: none;
-  }
-  .logo {
-    height: 82px;
   }
   .desktop ul li {
     text-decoration: none;
@@ -198,6 +195,32 @@ model-viewer > #ar-prompt > img {
   }
   #burger-con ul li a {
     border-bottom: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    background-color: #000;
+    margin-top: 8px;
+    grid-auto-rows: min-content;
+  }
+  footer .form {
+    grid-column: 2/4;
+  }
+  footer .footerNav {
+    grid-column: 5/7;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  footer .footerNav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  #copyright {
+    color: #fff;
+    background-color: #131313;
+    text-align: center;
+    padding: 7px;
+    font-size: 12px;
   }
 }
 #about-us {
