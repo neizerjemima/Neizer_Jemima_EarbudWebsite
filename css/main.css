@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/Montserrat-VariableFont_wght.ttf") format("ttf");
+}
+body {
+  font-family: "Montserrat", arial, sans-serif;
+}
+
 model-viewer {
   width: auto;
   height: 700px;

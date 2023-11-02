@@ -9,31 +9,31 @@
 
 //flex box mixins
 
-@mixin flex-column {
-      display: flex;
-      flex-direction: column;
-}
+// @mixin flex-column {
+//       display: flex;
+//       flex-direction: column;
+// }
     
-@mixin flex-center {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-}
+// @mixin flex-center {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+// }
     
-@mixin flex-center-column {
-      @include flex-center;
-      flex-direction: column;
-}
+// @mixin flex-center-column {
+//       @include flex-center;
+//       flex-direction: column;
+// }
     
-@mixin flex-center-vert {
-      display: flex;
-      align-items: center;
-}
+// @mixin flex-center-vert {
+//       display: flex;
+//       align-items: center;
+// }
     
-@mixin flex-center-horiz {
-      display: flex;
-      justify-content: center;
-}
+// @mixin flex-center-horiz {
+//       display: flex;
+//       justify-content: center;
+// }
 
 //fonts
 
@@ -45,7 +45,6 @@
               style: normal;
           }
           //Modern Browsers
-          src: url('#{$file-path}.woff') format('woff'),
-          url('#{$file-path}.woff2') format('woff2')
+          src: url('#{$file-path}.ttf') format('ttf')
       }
   }
