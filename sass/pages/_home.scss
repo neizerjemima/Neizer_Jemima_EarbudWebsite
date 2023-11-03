@@ -1,7 +1,35 @@
-#about-us {
-    margin-bottom: 40px;
-}
+@use '../abstracts' as a;
 
-#founders section {
-    margin-bottom: 40px;
+// #about-us {
+//     margin-bottom: 40px;
+// }
+
+// #founders section {
+//     margin-bottom: 40px;
+// }
+
+.hero-text {
+    position: absolute;
+    margin: 11rem 0 0 8rem;
+   
+    h2{
+        color: a.$accent-color;
+        font-size:4rem;
+        font-weight: 800;
+    }
+
+    h3{
+        font-weight: 500;
+        font-size: 2rem;
+        padding: 2rem 0 2rem 0;
+    }
+
+    button {
+        background-color: a.$accent-color;
+        color: a.$primary-color;
+        font-size: 1.5rem;
+        text-align: center;
+        border:none ;
+        padding: .5rem;
+    }
 }

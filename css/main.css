@@ -170,7 +170,9 @@ nav {
 #burger-con ul li a {
   text-decoration: none;
   color: #000000;
-  font-size: 21px;
+  font-weight: 450;
+  font-size: 19px;
+  letter-spacing: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -180,6 +182,9 @@ nav {
   }
 }
 @media screen and (min-width: 1200px) {
+  header img {
+    margin: 1rem;
+  }
   #button {
     display: none;
   }
@@ -195,6 +200,7 @@ nav {
   }
   #burger-con {
     display: block;
+    margin-top: 1.5rem;
     background: none;
   }
   #burger-con ul li {
@@ -232,10 +238,25 @@ nav {
     font-size: 12px;
   }
 }
-#about-us {
-  margin-bottom: 40px;
+.hero-text {
+  position: absolute;
+  margin: 11rem 0 0 8rem;
 }
-
-#founders section {
-  margin-bottom: 40px;
+.hero-text h2 {
+  color: #51068B;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.hero-text h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+.hero-text button {
+  background-color: #51068B;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+  padding: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
