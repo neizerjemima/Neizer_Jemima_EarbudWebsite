@@ -1,25 +1,51 @@
 
+@use '../abstracts' as a;
 
 @media screen and (min-width: 1200px) {
 footer {
     background-color: #000;
-    margin-top: 8px;
     grid-auto-rows: min-content;
+
+    h2{ color: a.$primary-color;}
     
-    .form {
-        grid-column: 2/4;
-    }
+   
 
     .footerNav {
-        grid-column: 5/7;
         font-size: 16px;
         margin-top: 20px;
 
-        ul li a {
+        ul li {
+            padding-bottom: .5rem;
+        }
+        
+        a {
             color: #fff;
             text-decoration: none;
         }
     }
+
+    .footer-icons { 
+        text-align: center;
+        h2{ 
+            font-size: 20px;
+        }
+        img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem 1rem 1rem 0;
+    }
+    }
+}
+form {
+    h2{
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    #sub { 
+        width: 1.5rem;
+    }
+    
 }
 
 #copyright {
