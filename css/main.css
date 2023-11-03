@@ -215,20 +215,39 @@ nav {
 @media screen and (min-width: 1200px) {
   footer {
     background-color: #000;
-    margin-top: 8px;
     grid-auto-rows: min-content;
   }
-  footer .form {
-    grid-column: 2/4;
+  footer h2 {
+    color: #ffffff;
   }
   footer .footerNav {
-    grid-column: 5/7;
     font-size: 16px;
     margin-top: 20px;
   }
-  footer .footerNav ul li a {
+  footer .footerNav ul li {
+    padding-bottom: 0.5rem;
+  }
+  footer .footerNav a {
     color: #fff;
     text-decoration: none;
+  }
+  footer .footer-icons {
+    text-align: center;
+  }
+  footer .footer-icons h2 {
+    font-size: 20px;
+  }
+  footer .footer-icons img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 1rem 1rem 0;
+  }
+  form h2 {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  form #sub {
+    width: 1.5rem;
   }
   #copyright {
     color: #fff;
@@ -259,4 +278,18 @@ nav {
   text-align: center;
   border: none;
   padding: 0.5rem;
+}
+
+.content {
+  font-size: 20px;
+  grid-column: 1/-1;
+}
+.content h2 {
+  text-align: center;
+}
+.content div {
+  grid-row: 2/2;
+}
+.content div img {
+  width: 6rem;
 }/*# sourceMappingURL=main.css.map */
