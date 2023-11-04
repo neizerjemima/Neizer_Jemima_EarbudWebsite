@@ -60,15 +60,6 @@ nav {
 
 
 @media screen and (min-width: 768px) {
-    
-    .button {
-        height: 45px;
-        margin-top: 15px;
-    }      
-}
-
-@media screen and (min-width: 1200px) {
-
     header img {  
         margin: 1rem;
     }
@@ -81,6 +72,7 @@ nav {
         text-decoration: none;
         
     }
+
     .desktop ul li a { 
         display: inline;  
     }
@@ -98,11 +90,28 @@ nav {
         
         ul li { display: inline;
             border-bottom: none;
-            padding-right: 26px;
+            padding-right: 1rem;
         }
    
         ul li a {
+            font-size: .8rem;
             border-bottom: none;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+ 
+    #burger-con {
+        display: block;
+        margin-top: 1.5rem;
+        
+        background: none;
+           
+        ul li a {
+            font-size: 1rem;
         }
 
     }
