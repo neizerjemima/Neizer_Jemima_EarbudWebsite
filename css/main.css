@@ -11,8 +11,8 @@ body {
 model-viewer {
   width: auto;
   height: 700px;
-  background-color: #e4bbbb;
-  margin: 0 auto;
+  background-image: url(../images/background.png);
+  margin: 0 auto 1rem;
 }
 
 .Hotspot {
@@ -237,6 +237,60 @@ nav {
     font-size: 1rem;
   }
 }
+footer {
+  background-color: #000;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+}
+footer h2 {
+  color: #ffffff;
+}
+footer .footerNav {
+  font-size: 0.9rem;
+  margin-top: 0.8;
+  margin-left: 3.9rem;
+}
+footer .footerNav ul li {
+  padding-bottom: 0.5rem;
+  list-style-type: none;
+}
+footer .footerNav a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .footer-icons {
+  text-align: center;
+}
+footer .footer-icons h2 {
+  font-size: 0.7rem;
+  margin-top: 2rem;
+}
+footer .footer-icons img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+footer form {
+  display: inline-flex;
+  margin-left: 3rem;
+}
+footer form #sub {
+  width: 1.5rem;
+}
+footer .form h2 {
+  padding: 1rem 0 0.4rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#copyright {
+  color: #fff;
+  background-color: #131313;
+  text-align: center;
+  padding: 7px;
+  font-size: 0.7rem;
+}
+
 @media screen and (min-width: 768px) {
   footer {
     background-color: #000;
@@ -271,6 +325,7 @@ nav {
   }
   footer form {
     display: inline-flex;
+    margin-left: 0;
   }
   footer form #sub {
     width: 1.5rem;
@@ -278,12 +333,9 @@ nav {
   footer .form h2 {
     padding: 2rem 0 0.4rem 0;
     font-size: 1rem;
+    text-align: left;
   }
   #copyright {
-    color: #fff;
-    background-color: #131313;
-    text-align: center;
-    padding: 7px;
     font-size: 12px;
   }
 }
@@ -327,34 +379,50 @@ nav {
     font-size: 1rem;
   }
   #copyright {
-    color: #fff;
-    background-color: #131313;
-    text-align: center;
-    padding: 7px;
     font-size: 12px;
   }
 }
 .hero-text {
   position: absolute;
-  margin: 5rem 0 0 1rem;
+  margin: 1rem 0 0 1rem;
 }
 .hero-text h2 {
   color: #51068B;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 800;
 }
 .hero-text h3 {
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 2rem 0 2rem 0;
+  display: none;
 }
 .hero-text .button {
   background-color: #51068B;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   text-align: center;
   border: none;
-  padding: 0.5rem;
+  padding: 0.3rem;
+  margin-top: 1.5rem;
+}
+
+.content {
+  font-size: 1rem;
+}
+.content h2 {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.content li {
+  list-style-type: none;
+}
+.content li img {
+  max-width: 80%;
+  text-align: center;
+}
+.content li p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -366,6 +434,7 @@ nav {
     font-weight: 800;
   }
   .hero-text h3 {
+    display: block;
     font-weight: 500;
     font-size: 1.2rem;
     padding: 2rem 0 2rem 0;
