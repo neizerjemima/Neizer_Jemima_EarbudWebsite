@@ -36,14 +36,20 @@
 
 .content {
     font-size: 20px;
-    grid-column: 1/-1;
     h2{ 
-        
+       margin-top: 2rem; 
         text-align: center;
     }
-    div{ 
-        grid-row: 2/2;
-        img{ 
-            width: 6rem;}
+    li{
+        list-style-type: none;
+        p{
+            text-align: center;
+            font-size: 18px;
+        }
     }
+    // .con-image {
+    //     grid-row: 2/2;
+    //     width: 1rem;
+    //      p{ text-align: center;}
+    // }
 }
