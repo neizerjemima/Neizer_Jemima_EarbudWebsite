@@ -1,0 +1,40 @@
+@use '../abstracts' as a;
+
+@media screen and (min-width: 1200px) {
+
+    .slideImage {
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    #imageCon {
+        position: relative;
+        max-width: 1200px;
+        height: 100px;
+    }
+
+    .image-right {
+        background: url(../images/Earbud_X-ray.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .image-left {
+        background: url(../images/Earbud_image.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        width: 50%;
+    }
+
+    .image-drag {
+        background-color: a.$accent-color;
+        width: 1rem;
+        cursor: pointer;
+        left:50%
+    }
+    
+}

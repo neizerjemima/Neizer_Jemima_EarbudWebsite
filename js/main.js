@@ -105,3 +105,43 @@
 })();
 
 // In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
+
+//This is for the slide reveal
+(() => {
+
+  let imageCon = document.querySelector(".slide-Image");
+  let drag = document.querySelector(".image-drag");
+  let left = document.querySelector(".image-left");
+  dragging = false,
+  min = 0,
+  max = imageCon.offsetWidth;
+
+  function onUp() {
+    dragging = false;
+  }
+
+  function onDown() {
+    dragging = true;
+  }
+
+  function onMove(event) {
+    if (dragging) {
+      let x = e.clientX - imageCon.getBoundingClientRect().left;
+
+      if (x<min) {
+        x=min;
+      } else if (x>max) {
+        x = max-9;
+      }
+
+      drag.style.left = x +"px";
+      left.style.width = x + "px";
+      }
+    }
+  
+
+  document.body.addEventListener("mouseup",onUp);
+  document.body.addEventListener("mousemove",onMove);
+  drag.addEventListener("mousedown",onDown);
+
+})();
