@@ -117,6 +117,7 @@ model-viewer[ar-status=session-started] > #ar-prompt {
 }
 
 model-viewer > #ar-prompt > img {
+  animation: circle 4s linear infinite;
 }
 
 :not(:defined) > * {
@@ -407,14 +408,23 @@ footer .form h2 {
     cursor: pointer;
   }
 }
+#scrollAnim {
+  margin-top: 0.5rem;
+  height: 23rem;
+  background-color: #51068B;
+  color: #ffffff;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#scrollAnim h2 {
+  padding-top: 9rem;
+}
+
 @media screen and (min-width: 768px) {
   #scrollAnim {
-    margin-top: 0.5rem;
     height: 27rem;
-    background-color: #51068B;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
   #scrollAnim h2 {
     padding-top: 12rem;
@@ -471,6 +481,86 @@ footer .form h2 {
   margin-bottom: 1rem;
 }
 
+.difference {
+  text-align: center;
+  margin-top: 2rem;
+}
+.difference p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  line-height: 1.1rem;
+}
+
+.perk {
+  margin-bottom: 2rem;
+}
+
+.perk-text, .perk-text-2 {
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.perk-text h4, .perk-text-2 h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.perk-text h2, .perk-text-2 h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.perk-text p, .perk-text-2 p {
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+.perk-text-2 {
+  margin-left: 1rem;
+}
+
+.image-1, .image-2 {
+  height: 15rem;
+  background-color: #51068B;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.image-3 {
+  height: 20rem;
+  background-color: blanchedalmond;
+}
+
+.charge {
+  margin-left: 1.2rem;
+}
+.charge h2 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+.charge p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#variety {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: blanchedalmond;
+  padding: 10rem 0 10rem 0;
+  margin-bottom: 1rem;
+}
+#variety p {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+#variety br {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .hero-text {
     margin: 5rem 0 0 4rem;
@@ -513,38 +603,39 @@ footer .form h2 {
     text-align: center;
     font-size: 14px;
   }
+  .difference {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .difference p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+  }
   .perk {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   .perk-text, .perk-text-2 {
     margin-top: 4rem;
+    margin-bottom: 0;
+    text-align: left;
   }
-  .perk-text h4, .perk-text-2 h4 {
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-  }
-  .perk-text h2, .perk-text-2 h2 {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-  }
-  .perk-text p, .perk-text-2 p {
-    line-height: 1.6rem;
+  .perk-text-2 {
+    margin-top: 2rem;
+    grid-column: 7/13;
+    margin-right: 2rem;
   }
   .image-1, .image-2 {
-    height: 22rem;
-    background-color: #51068B;
-    color: #ffffff;
-    margin-bottom: 3rem;
-    font-size: 1rem;
-    text-align: center;
+    height: 19rem;
+    margin-bottom: 1rem;
   }
   .image-3 {
     height: 23rem;
-    background-color: blanchedalmond;
   }
   .charge {
     margin-top: -20rem;
+    margin-left: 0;
   }
   .charge h2 {
     font-size: 1.2rem;
@@ -552,21 +643,7 @@ footer .form h2 {
     margin-top: 3rem;
   }
   .charge p {
-    line-height: 1.5rem;
-  }
-  #variety {
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: blanchedalmond;
-    padding: 10rem 0 10rem 0;
-    margin-bottom: 1rem;
-  }
-  #variety p {
-    padding-top: 0.5rem;
-    font-size: 1rem;
-  }
-  #variety br {
-    display: none;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -594,39 +671,28 @@ footer .form h2 {
     font-size: 18px;
   }
   .difference {
-    text-align: center;
+    margin-top: 0;
   }
   .difference p {
     font-size: 1.1rem;
-    margin-top: 0.5rem;
     margin-bottom: 2rem;
-    line-height: 1.5rem;
-  }
-  .perk {
-    margin-bottom: 5rem;
   }
   .perk-text, .perk-text-2 {
     margin-top: 4rem;
   }
   .perk-text h4, .perk-text-2 h4 {
     font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
   }
   .perk-text h2, .perk-text-2 h2 {
     font-size: 3rem;
     padding-bottom: 2rem;
   }
-  .perk-text p, .perk-text-2 p {
-    line-height: 1.6rem;
+  .perk-text-2 {
+    margin-right: 0;
   }
   .image-1, .image-2 {
     height: 22rem;
-    background-color: #51068B;
-    color: #ffffff;
     margin-bottom: 3rem;
-    font-size: 1rem;
-    text-align: center;
   }
   .charge h2 {
     font-size: 1.9rem;

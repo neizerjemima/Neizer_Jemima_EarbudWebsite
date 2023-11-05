@@ -55,6 +55,81 @@
 
 }
 
+.difference {
+    text-align: center;
+    margin-top: 2rem;
+    p{
+        font-size: .7rem;
+        margin-top: .5rem;
+        margin-bottom: 4rem;
+        line-height: 1.1rem;
+    }
+}
+
+.perk{ margin-bottom: 2rem;}
+    .perk-text, .perk-text-2{
+        margin-top: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        h4{
+            font-size: .8rem;
+            font-weight: 500;
+            letter-spacing: .1rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        p{
+            line-height: 1.6rem;
+            text-align: left;
+        }
+    }
+
+ .perk-text-2{
+        margin-left: 1rem;
+    }
+
+    .image-1,.image-2 {
+        height: 15rem;
+        background-color: a.$accent-color;
+        color: a.$primary-color;
+        margin-bottom: .5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .image-3 {
+        height: 20rem;
+        background-color: blanchedalmond;
+    }
+    .charge {
+        margin-left: 1.2rem;
+        h2 {
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+            margin-top: 1.5rem;  
+        }
+        p{
+            line-height: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+    #variety {
+        font-size: 1.2rem;
+        
+        text-align: center;
+        background-color: blanchedalmond;
+        padding: 10rem 0 10rem 0;
+        margin-bottom: 1rem;
+        p{
+            padding-top: .5rem;
+            font-size: 1rem;
+        }
+        br {display: none;}
+    }
+
 
 @media screen and (min-width: 768px) {
     .hero-text {
@@ -98,11 +173,6 @@
         li{
             list-style-type: none;
 
-            // img { 
-            //     max-width: none;
-            //     text-align: center;
-            // }
-
             p{
                 text-align: center;
                 font-size: 14px;
@@ -110,62 +180,50 @@
         }
     }
 
-    .perk{ margin-bottom: 5rem;}
-    .perk-text, .perk-text-2{
-        margin-top: 4rem;
-        h4{
-            font-size: 1rem;
-            font-weight: 500;
-            letter-spacing: .1rem;
-        }
-
-        h2{
-            font-size: 3rem;
-            padding-bottom: 2rem;
-        }
+    .difference {
+        text-align: center;
+        margin-top: 2rem;
         p{
-            line-height: 1.6rem;
+            font-size: 1rem;
+            margin-top: .5rem;
+            margin-bottom: 4rem;
+            line-height: 1.5rem;
         }
     }
 
+    .perk{ margin-bottom: 2rem;}
+    .perk-text, .perk-text-2{
+        margin-top: 4rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+ .perk-text-2{
+        margin-top: 2rem;
+        grid-column: 7/13;
+        margin-right: 2rem;
+    }
+
     .image-1,.image-2 {
-        height: 22rem;
-        background-color: a.$accent-color;
-        color: a.$primary-color;
-        margin-bottom: 3rem;
-        font-size: 1rem;
-        text-align: center;
+        height: 19rem;
+        margin-bottom: 1rem;
     }
 
     .image-3 {
         height: 23rem;
-        background-color: blanchedalmond;
     }
 
     .charge {
         margin-top: -20rem;
+        margin-left: 0;
         h2 {
             font-size: 1.2rem;
             padding-bottom: 1rem;
             margin-top: 3rem;  
         }
         p{
-            line-height: 1.5rem;
+            margin-bottom: 0;
         }
-    }
-
-    #variety {
-        font-size: 1.2rem;
-        
-        text-align: center;
-        background-color: blanchedalmond;
-        padding: 10rem 0 10rem 0;
-        margin-bottom: 1rem;
-        p{
-            padding-top: .5rem;
-            font-size: 1rem;
-        }
-        br {display: none;}
     }
 
 
@@ -206,40 +264,33 @@
     
     
     .difference {
-        text-align: center;
+        margin-top: 0;
         p{
             font-size: 1.1rem;
-            margin-top: .5rem;
             margin-bottom: 2rem;
-            line-height: 1.5rem;
         }
     }
 
-    .perk{ margin-bottom: 5rem;}
     .perk-text, .perk-text-2{
         margin-top: 4rem;
         h4{
             font-size: 1rem;
-            font-weight: 500;
-            letter-spacing: .1rem;
         }
 
         h2{
             font-size: 3rem;
             padding-bottom: 2rem;
         }
-        p{
-            line-height: 1.6rem;
-        }
+    }
+
+    .perk-text-2{
+        // margin-top: 0;
+        margin-right: 0;
     }
 
     .image-1,.image-2 {
         height: 22rem;
-        background-color: a.$accent-color;
-        color: a.$primary-color;
         margin-bottom: 3rem;
-        font-size: 1rem;
-        text-align: center;
     }
 
     .charge {
