@@ -110,6 +110,64 @@
         }
     }
 
+    .perk{ margin-bottom: 5rem;}
+    .perk-text, .perk-text-2{
+        margin-top: 4rem;
+        h4{
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: .1rem;
+        }
+
+        h2{
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+        p{
+            line-height: 1.6rem;
+        }
+    }
+
+    .image-1,.image-2 {
+        height: 22rem;
+        background-color: a.$accent-color;
+        color: a.$primary-color;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .image-3 {
+        height: 23rem;
+        background-color: blanchedalmond;
+    }
+
+    .charge {
+        margin-top: -20rem;
+        h2 {
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+            margin-top: 3rem;  
+        }
+        p{
+            line-height: 1.5rem;
+        }
+    }
+
+    #variety {
+        font-size: 1.2rem;
+        
+        text-align: center;
+        background-color: blanchedalmond;
+        padding: 10rem 0 10rem 0;
+        margin-bottom: 1rem;
+        p{
+            padding-top: .5rem;
+            font-size: 1rem;
+        }
+        br {display: none;}
+    }
+
 
 }
 
@@ -136,6 +194,8 @@
     
     .content {
         font-size: 20px;
+        margin-bottom: 5rem;
+        margin-top: 4rem;
 
         li{
             p{
@@ -143,4 +203,55 @@
             }
         }
     }
+    
+    
+    .difference {
+        text-align: center;
+        p{
+            font-size: 1.1rem;
+            margin-top: .5rem;
+            margin-bottom: 2rem;
+            line-height: 1.5rem;
+        }
     }
+
+    .perk{ margin-bottom: 5rem;}
+    .perk-text, .perk-text-2{
+        margin-top: 4rem;
+        h4{
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: .1rem;
+        }
+
+        h2{
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+        p{
+            line-height: 1.6rem;
+        }
+    }
+
+    .image-1,.image-2 {
+        height: 22rem;
+        background-color: a.$accent-color;
+        color: a.$primary-color;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .charge {
+        h2 {
+            font-size: 1.9rem;
+        }
+    }
+
+    #variety {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        br {display: block;}
+    }
+}
+    
