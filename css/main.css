@@ -88,29 +88,12 @@ model-viewer {
   outline: 1px solid #4285f4;
 }
 
-@-webkit-keyframes circle {
-  from {
-    transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
-  }
-}
-
 @keyframes circle {
   from {
     transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
   }
   to {
     transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
-  }
-}
-@-webkit-keyframes elongate {
-  from {
-    transform: translateX(100px);
-  }
-  to {
-    transform: translateX(-100px);
   }
 }
 @keyframes elongate {
@@ -125,8 +108,7 @@ model-viewer > #ar-prompt {
   position: absolute;
   left: 50%;
   bottom: 60px;
-  -webkit-animation: elongate 2s infinite ease-in-out alternate;
-          animation: elongate 2s infinite ease-in-out alternate;
+  animation: elongate 2s infinite ease-in-out alternate;
   display: none;
 }
 
@@ -135,8 +117,6 @@ model-viewer[ar-status=session-started] > #ar-prompt {
 }
 
 model-viewer > #ar-prompt > img {
-  -webkit-animation: circle 4s linear infinite;
-          animation: circle 4s linear infinite;
 }
 
 :not(:defined) > * {
@@ -144,7 +124,6 @@ model-viewer > #ar-prompt > img {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   height: 72px;
 }
@@ -239,7 +218,6 @@ nav {
 }
 footer {
   background-color: #000;
-  grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
 }
 footer h2 {
@@ -294,7 +272,6 @@ footer .form h2 {
 @media screen and (min-width: 768px) {
   footer {
     background-color: #000;
-    grid-auto-rows: -webkit-min-content;
     grid-auto-rows: min-content;
   }
   footer h2 {
@@ -382,6 +359,75 @@ footer .form h2 {
     font-size: 12px;
   }
 }
+#outerShell {
+  display: none;
+}
+
+.xray-slider {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 650px;
+  }
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 650px;
+  }
+  .image-right {
+    background: url(../images/Earbud_X-ray.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .image-left {
+    background: url(../images/Earbud_image.png) no-repeat;
+    background-size: cover;
+    width: 50%;
+    background-attachment: fixed;
+    height: 100%;
+  }
+  .image-drag {
+    background-color: #51068B;
+    left: 50%;
+    width: 0.3rem;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  #scrollAnim {
+    margin-top: 0.5rem;
+    height: 27rem;
+    background-color: #51068B;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #scrollAnim h2 {
+    padding-top: 12rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #scrollAnim {
+    height: 30rem;
+  }
+  #scrollAnim h2 {
+    padding-top: 10rem;
+  }
+}
 .hero-text {
   position: absolute;
   margin: 1rem 0 0 1rem;
@@ -467,6 +513,61 @@ footer .form h2 {
     text-align: center;
     font-size: 14px;
   }
+  .perk {
+    margin-bottom: 5rem;
+  }
+  .perk-text, .perk-text-2 {
+    margin-top: 4rem;
+  }
+  .perk-text h4, .perk-text-2 h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+  .perk-text h2, .perk-text-2 h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+  .perk-text p, .perk-text-2 p {
+    line-height: 1.6rem;
+  }
+  .image-1, .image-2 {
+    height: 22rem;
+    background-color: #51068B;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .image-3 {
+    height: 23rem;
+    background-color: blanchedalmond;
+  }
+  .charge {
+    margin-top: -20rem;
+  }
+  .charge h2 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .charge p {
+    line-height: 1.5rem;
+  }
+  #variety {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10rem 0 10rem 0;
+    margin-bottom: 1rem;
+  }
+  #variety p {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+  #variety br {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-text {
@@ -486,8 +587,55 @@ footer .form h2 {
   }
   .content {
     font-size: 20px;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
   }
   .content li p {
     font-size: 18px;
   }
-}
+  .difference {
+    text-align: center;
+  }
+  .difference p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+  .perk {
+    margin-bottom: 5rem;
+  }
+  .perk-text, .perk-text-2 {
+    margin-top: 4rem;
+  }
+  .perk-text h4, .perk-text-2 h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+  .perk-text h2, .perk-text-2 h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+  .perk-text p, .perk-text-2 p {
+    line-height: 1.6rem;
+  }
+  .image-1, .image-2 {
+    height: 22rem;
+    background-color: #51068B;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .charge h2 {
+    font-size: 1.9rem;
+  }
+  #variety {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  #variety br {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
