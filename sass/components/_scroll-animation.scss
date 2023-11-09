@@ -1,29 +1,33 @@
 @use '../abstracts' as a;
 
 #scrollAnim {
-    margin-top: .5rem;
-    height: 23rem;
-    background-color: a.$accent-color;
-    color: a.$primary-color;
-    font-size: .6rem;
-    text-align: center;
-    h2{ padding-top: 9rem;}
-    margin-bottom: 1rem;
+    // margin-top: .5rem;
+    // height: 23rem;
+    // background-color: a.$accent-color;
+    // color: a.$primary-color;
+    // font-size: .6rem;
+    // text-align: center;
+    // h2{ padding-top: 9rem;}
+    // margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    // background-color: aquamarine;
 }
 
-@media screen and (min-width: 768px) {
-    #scrollAnim {
-        height: 27rem;
-        font-size: 2rem;
-        h2{ padding-top: 12rem;}
-    }
+// @media screen and (min-width: 768px) {
+//     #scrollAnim {
+//         height: 27rem;
+//         font-size: 2rem;
+//         h2{ padding-top: 12rem;}
+//     }
     
-    }
+//     }
 
-@media screen and (min-width: 1200px) {
-#scrollAnim {
-    height: 30rem;
-    h2{ padding-top: 10rem;}
-}
+// @media screen and (min-width: 1200px) {
+// #scrollAnim {
+//     height: 30rem;
+//     h2{ padding-top: 10rem;}
+// }
 
-}
+// }
