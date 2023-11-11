@@ -84,6 +84,7 @@
   });
 })();
 
+
 //This for the hamburger menu
 
 (() => {
@@ -103,6 +104,7 @@
       button.addEventListener("click", hamburgerMenu, false);
   })();
 })();
+
 
 // In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
 
@@ -152,16 +154,14 @@
 
 //This is for the scroll animation
 (() => {
+  gsap.registerPlugin(ScrollTrigger);
 
   const canvas = document.querySelector("#scrollAnim");
   const context = canvas.getContext("2d");
   canvas.width = 1920;
   canvas.height = 1080;
-  const frameCount = 425; //how many still frames do we have?
-  const images = []; //array to hold all the images
-
-  //object literal, that has a property called frame, and a value
-
+  const frameCount = 714; 
+  const images = []; 
   const earbuds = {
       frame: 0,
   };
@@ -171,25 +171,18 @@
   {
       //console.log(i)
       const img = new Image();
-      img.src = `images/anim/earbud${(i+1).toString().padStart(4,"0")}.jpg`;
+      img.src = `images/anim/earBuds_1${(i+1).toString().padStart(3,'0')}.jpg`;
       images.push(img);
   }
 
-  // console.table(images);
-
-  //we are not actually animating a DOM element, but rather an object
-  //which contains a frame count, as the user scrolls we increase the
-  //value by 1. We tell GreenSock there is a tool of 449 frames to cycle
-  //though, so it know when to stop. GreenSock scrolling uses decimals, so
-  //we use "snap" to give us whole numbers 1 vs 0.
-  gsap.to(earbuds, {
-      frame:424,
+   gsap.to(earbuds, {
+      frame:713,
       snap: "frame",
       scrollTrigger: {
-          trigger: "#scrollAnim",
-          pin: true,
-          scrub: .1,
-          markers: true,
+          trigger: ".scrollAnim",
+          pin: ".scrollWrap",
+          scrub: 1,
+          markers: false,
           start: "top top"
       },
       onUpdate: render
@@ -198,7 +191,6 @@
   images[0].addEventListener("onload", render());
 
   function render() {
-      // console.log(buds.frame);
       context.clearRect(0,0, canvas.width, canvas.height);
       context.drawImage(images[earbuds.frame],0,0);
   }
