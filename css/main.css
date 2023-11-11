@@ -408,10 +408,42 @@ footer .form h2 {
 }
 #scrollAnim {
   max-width: 100%;
-  width: 100%;
-  height: 100%;
 }
 
+body {
+  background-color: #fff;
+}
+
+#variety {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#variety br {
+  display: none;
+}
+
+.variety {
+  position: absolute;
+  margin: 28rem 0 0 24rem;
+  color: #51068B;
+}
+.variety h2 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 1200px) {
+  #variety {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  #variety br {
+    display: block;
+  }
+  img {
+    width: 150%;
+  }
+}
 .hero-text {
   position: absolute;
   margin: 1rem 0 0 1rem;
@@ -495,8 +527,6 @@ footer .form h2 {
 
 .image-1, .image-2 {
   height: 15rem;
-  background-color: #51068B;
-  color: #ffffff;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   text-align: center;
@@ -518,21 +548,6 @@ footer .form h2 {
 .charge p {
   line-height: 1.5rem;
   margin-bottom: 2rem;
-}
-
-#variety {
-  font-size: 1.2rem;
-  text-align: center;
-  background-color: blanchedalmond;
-  padding: 10rem 0 10rem 0;
-  margin-bottom: 1rem;
-}
-#variety p {
-  padding-top: 0.5rem;
-  font-size: 1rem;
-}
-#variety br {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -668,14 +683,11 @@ footer .form h2 {
     height: 22rem;
     margin-bottom: 3rem;
   }
+  #side_1 {
+    max-width: 70%;
+    margin-top: -2.4rem;
+  }
   .charge h2 {
     font-size: 1.9rem;
-  }
-  #variety {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  #variety br {
-    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
