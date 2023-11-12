@@ -65,44 +65,8 @@
         line-height: 1.1rem;
     }
 }
-
-.perk{ margin-bottom: 2rem;}
-    .perk-text, .perk-text-2{
-        margin-top: 1rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        h4{
-            font-size: .8rem;
-            font-weight: 500;
-            letter-spacing: .1rem;
-        }
-
-        h2{
-            font-size: 1.5rem;
-            padding-bottom: 1rem;
-        }
-
-        p{
-            line-height: 1.6rem;
-            text-align: left;
-        }
-    }
-
- .perk-text-2{
-        margin-left: 1rem;
-    }
-
-    .image-1,.image-2 {
-        height: 15rem;
-        // background-color: a.$accent-color;
-        // color: a.$primary-color;
-        margin-bottom: .5rem;
-        font-size: 1rem;
-        text-align: center;
-    }
     .image-3 {
         height: 20rem;
-        background-color: blanchedalmond;
     }
     .charge {
         margin-left: 1.2rem;
@@ -179,35 +143,18 @@
         }
     }
 
-    .perk{ margin-bottom: 2rem;}
-    .perk-text, .perk-text-2{
-        margin-top: 4rem;
-        margin-bottom: 0;
-        text-align: left;
-    }
-
- .perk-text-2{
-        margin-top: 2rem;
-        grid-column: 7/13;
-        margin-right: 2rem;
-    }
-
-    .image-1,.image-2 {
-        height: 19rem;
-        margin-bottom: 1rem;
-    }
 
     .image-3 {
-        height: 23rem;
+        height: fit-content;
     }
 
     .charge {
         margin-top: -20rem;
         margin-left: 0;
         h2 {
-            font-size: 1.2rem;
+            font-size: 3rem;
             padding-bottom: 1rem;
-            margin-top: 3rem;  
+            
         }
         p{
             margin-bottom: 0;
@@ -259,34 +206,19 @@
         }
     }
 
-    .perk-text, .perk-text-2{
-        margin-top: 4rem;
-        h4{
-            font-size: 1rem;
-        }
-
-        h2{
-            font-size: 3rem;
-            padding-bottom: 2rem;
-        }
-    }
-
-    .perk-text-2{
-        // margin-top: 0;
-        margin-right: 0;
-    }
-
-    .image-1,.image-2 {
-        height: 22rem;
-        margin-bottom: 3rem;
-    }
-
+   
 
     .charge {
         h2 {
-            font-size: 1.9rem;
+            font-size: 3rem;
+            margin-top: -10rem;
+            color: a.$accent-color;
+        }
+        span {
+            font-size: 10rem;
         }
     }
+    span:hover { color: #000;}
 
     
 }

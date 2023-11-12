@@ -1,70 +1,78 @@
-// * {
-// 	box-sizing: border-box;
-// }
-// // body {
-// // 	background: #111;
-// // 	min-height: 100vh;
-// // 	padding: 0;
-// // 	margin: 0;
-// // }
-// .gallery {
-// 	// position: absolute;
-// 	// width: 100%;
-// 	height: fit-content;
-// 	// overflow: hidden;
-	
-// 	li {
-// 		list-style: none;
-// 		position: absolute;
-// 		height: 0rem;
-// 		width: 20rem;
-// 		transform: translate(150%, 50%);
-// 		flex-shrink: 0;
-// 	}
-// }
-
-// .cards {
-// 	// position: absolute;
-// 	max-width: 100%;
-// 	// width: 14rem;
-// 	// height: 18rem;
-// 	top: 40%;
-// 	left: 50%;
-// 	transform: translate(-50%, -50%);
-// }
-// .cards li {
-// 	list-style: none;
-// 	// padding: 0;
-// 	// margin: 0;
-// 	width: 20rem;
-// 	max-width: 100%;
-// 	height: 18rem;
-// 	text-align: center;
-// 	// line-height: 18rem;
-// 	// font-size: 2rem;
-// 	// background-color: #9d7cce;
-// 	position: absolute;
-// 	// top: 0;
-// 	// left: 0;
-// 	// border-radius: 0.8rem;
-
-// }
-
-// .cards 
-  
-//   .gallery {
-//   img {
-// 	max-width: 100%; /* Ensure images don't exceed their container width */
-// 	max-height: 100%; /* Ensure images don't exceed their container height */
-//   }
-
-//   li {
-// 	width: 100vw;
-// 	flex-shrink: 0;
-// 	text-align: center;
-// 	padding: 20px;
-// 	border: 1px solid #ccc;
-//   }
-// }
+@use '../abstracts' as a;
 
 
+.gallery { margin-bottom: 3rem;}
+
+.card:hover {
+    cursor: pointer;
+    // opacity: 0.1;
+    filter: brightness(50%);
+}
+.cards:hover {
+    cursor: pointer;
+    // opacity: 0.1;
+    filter: brightness(50%);
+}
+
+.card{
+    grid-row:1/2 ;
+    margin-left: 5px;
+    margin-right: -10px;
+    padding-right: 0;
+   
+    :hover~h4 { 
+        opacity: 1;
+        transition: ease-in;
+        padding-top: 1rem;
+        text-decoration: underline;
+        transition-duration: .2s;
+    }
+    h4{ 
+        margin-top: -8rem;
+        text-align: center;
+        color: a.$primary-color;
+        opacity: 0;
+        
+    }
+    
+} 
+.cards {
+    grid-row:2/2 ;
+    margin-top: -7.7rem;
+    margin-left: 5px;
+    margin-right: -10px;
+    padding-right: 0;
+
+    :hover~h4 { 
+        opacity: 1;
+        transition: ease-in;
+        padding-top: 1rem;
+        text-decoration: underline;
+        transition-duration: .1s;
+    }
+    h4{ 
+        margin-top: -8rem;
+        text-align: center;
+        color: a.$primary-color;
+        opacity: 0;
+        
+    }
+    
+}
+
+#cards { margin-top: -13.5rem;}
+#cardText { 
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    text-align: center;
+    h2{
+        border: solid .3rem a.$accent-color ;
+        padding: .5rem;
+        }
+        :hover {
+            background-color: a.$accent-color;
+            color: a.$primary-color;
+            font-weight: 400;
+            cursor: pointer;
+        }
+}

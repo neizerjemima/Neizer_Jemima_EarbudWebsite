@@ -1,15 +1,31 @@
 @use '../abstracts' as a;
 
 header {
+    #header {
     position: sticky;
     height: 72px;
-
+    }
     img {
         width: 48px;
         height: 48px;
         margin: 10px 0 0 10px;
     }
+
+    #main-nav button {
+        width: 20px;
+        height: 20px;
+        background: url(../images/burger.svg) no-repeat center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        transition: all 0.5s ease;
+        border: 0;
+      }
+      
+      #main-nav button.expanded {
+        transform: rotate(90deg);
+      }
 }
+
 
 
 nav {

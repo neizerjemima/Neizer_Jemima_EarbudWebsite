@@ -11,8 +11,9 @@ footer {
 
     .footerNav {
         font-size: .9rem;
-        margin-top: .8;
-        margin-left: 3.9rem;
+        margin-left: -1.9rem;
+        grid-row: 2/2;
+        margin-bottom: 2.1rem;
 
         ul li {
             padding-bottom: .5rem;
@@ -27,9 +28,11 @@ footer {
 
     .footer-icons { 
         text-align: center;
+        // margin-top: 1rem;
+        grid-row: 1/2;
         h2{ 
             font-size: .7rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
         img {
         width: 2rem;
@@ -41,6 +44,10 @@ footer {
     form {
         display: inline-flex;
         margin-left: 3rem;
+        #mail {
+            width: 15rem;
+            margin-right: .2rem;
+        }
 
         #sub { 
             width: 1.5rem;
@@ -71,7 +78,8 @@ footer {
     
         .footerNav {
             font-size: 14px;
-            margin-top: 20px;
+            // margin-top: 4rem;
+
     
             ul li {
                 padding-bottom: .5rem;
@@ -87,7 +95,7 @@ footer {
             text-align: center;
             h2{ 
                 font-size: 1rem;
-                margin-top: 1.2rem;
+                // margin-top: 1.2rem;
             }
             img {
             width: 2rem;
@@ -110,6 +118,33 @@ footer {
             font-size: 1rem;
             text-align: left;
         }
+
+        .location {
+            
+            grid-row: 2/2;
+            margin-top: 1rem;
+            h3 {
+                a{
+                    text-decoration: none;
+                }
+            }
+            h4 {
+                font-weight: 400;
+                margin-left: 2.5rem;
+            }
+            a {color: a.$primary-color; }
+        }
+
+        .lan {
+            margin-top: 1rem;
+            h4{
+                font-size: 1rem ;
+                a{
+                    text-decoration: none;
+                    color: a.$primary-color;
+                }
+            }
+        }
     }
     
     
@@ -131,7 +166,6 @@ footer {
 
     .footerNav {
         font-size: 16px;
-        margin-top: 20px;
 
         ul li {
             padding-bottom: .5rem;
@@ -145,8 +179,9 @@ footer {
 
     .footer-icons { 
         text-align: center;
+        margin-top: -1rem;
         h2{ 
-            font-size: 20px;
+            font-size: 1rem;
         }
         img {
         width: 2.5rem;
@@ -165,7 +200,7 @@ footer {
 
     .form h2 {
         padding: 2rem 0 .4rem 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
