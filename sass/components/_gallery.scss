@@ -1,10 +1,14 @@
 @use '../abstracts' as a;
-
-.card { display: none;}
-
+.gallery { 
+    background-image: url(../images/background.png);
+}
+.cards,#card_B { display: none;}
+.cards h4, .card h4 { display: none;}
+#cards_S { margin-left: -1rem;}
 #cardText { 
-    margin-top: 2.4rem;
+    display: block;
     font-size: .5rem;
+    margin-bottom: .5rem;
     text-align: center;
     h2{
         border: solid .3rem a.$accent-color ;
@@ -19,7 +23,11 @@
 }
 
 @media screen and (min-width: 768px) {
-.gallery { margin-bottom: 3rem;}
+.gallery { 
+    margin-bottom: 3rem;
+    background-image: none;
+}
+#card_B {display: block;}
 
 .card:hover {
     cursor: pointer;
@@ -55,6 +63,7 @@
     
 } 
 .cards {
+    display: block;
     grid-row:2/2 ;
     margin-top: -7.7rem;
     margin-left: 5px;
@@ -73,7 +82,6 @@
         text-align: center;
         color: a.$primary-color;
         opacity: 0;
-        
     }
     
 }

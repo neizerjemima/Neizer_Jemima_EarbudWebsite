@@ -2,7 +2,7 @@
 @use '../abstracts' as a;
 
 footer {
-    background-color: #000;
+    background-color: a.$secondary-color;
     grid-auto-rows: min-content;
 
     h2{ color: a.$primary-color;}
@@ -11,9 +11,9 @@ footer {
 
     .footerNav {
         font-size: .9rem;
-        margin-left: -1.9rem;
-        grid-row: 2/2;
-        margin-bottom: 2.1rem;
+        // margin-left: -2rem;
+        grid-row: 3/5;
+        margin-top: 5rem;
 
         ul li {
             padding-bottom: .5rem;
@@ -29,10 +29,10 @@ footer {
     .footer-icons { 
         text-align: center;
         // margin-top: 1rem;
-        grid-row: 1/2;
+        grid-row: 2/5;
         h2{ 
             font-size: .7rem;
-            margin-top: 3rem;
+            margin-top: 1rem;
         }
         img {
         width: 2rem;
@@ -43,7 +43,8 @@ footer {
 
     form {
         display: inline-flex;
-        margin-left: 3rem;
+        margin-left: 1rem;
+        // grid-row: 2/3;
         #mail {
             width: 15rem;
             margin-right: .2rem;
@@ -61,6 +62,36 @@ footer {
     }
 }
 
+.location {        
+    margin-top: 1rem;
+    h3 {
+        a{
+            text-decoration: none;
+            font-size: .9rem;
+            margin-left: .5rem;
+        }
+    }
+    h4 {
+        font-weight: 400;
+        margin-left: 2.5rem;
+    }
+    a {color: a.$primary-color; }
+}
+
+.lan {
+    margin-top: 1rem;
+    font-size: .9rem;
+    margin-left: 2rem;
+    margin-bottom: .5rem;
+    h4{
+        font-size: .9rem ;
+        a{
+            text-decoration: none;
+            color: a.$primary-color;
+        }
+    }
+}
+
 #copyright {
     color: #fff;
     background-color: #131313;
@@ -69,17 +100,19 @@ footer {
     font-size: .7rem;
 }
 
+
+
 @media screen and (min-width: 768px) {
     footer {
-        background-color: #000;
         grid-auto-rows: min-content;
     
         h2{ color: a.$primary-color;} 
     
         .footerNav {
             font-size: 14px;
-            // margin-top: 4rem;
-
+            margin-top: 2rem;
+            margin-bottom: 2.1rem;
+            grid-row: none;
     
             ul li {
                 padding-bottom: .5rem;
@@ -93,9 +126,10 @@ footer {
     
         .footer-icons { 
             text-align: center;
+            grid-row: 1/3;
             h2{ 
                 font-size: 1rem;
-                // margin-top: 1.2rem;
+                margin-top: 3rem;
             }
             img {
             width: 2rem;
@@ -107,6 +141,7 @@ footer {
         form {
             display: inline-flex;
             margin-left: 0;
+            grid-row: none;
     
             #sub { 
                 width: 1.5rem;
@@ -120,23 +155,21 @@ footer {
         }
 
         .location {
-            
             grid-row: 2/2;
-            margin-top: 1rem;
+            margin-top: 2rem;
+            margin-left: 2rem;
             h3 {
                 a{
                     text-decoration: none;
+                    font-size: auto;
+                    margin-left: 0;
                 }
             }
-            h4 {
-                font-weight: 400;
-                margin-left: 2.5rem;
-            }
-            a {color: a.$primary-color; }
         }
 
         .lan {
-            margin-top: 1rem;
+            margin-top: 3rem;
+            grid-row: 2/2;
             h4{
                 font-size: 1rem ;
                 a{
