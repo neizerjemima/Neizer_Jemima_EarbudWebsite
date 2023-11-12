@@ -13,6 +13,7 @@
   margin-top: 1rem;
   text-align: center;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 .perk-text h4, .perk-text-2 h4 {
   font-size: 0.8rem;
@@ -28,15 +29,12 @@
   text-align: left;
 }
 
-.perk-text-2 {
-  margin-left: 1rem;
-}
+// .perk-text-2 {
+//   margin-left: 1rem;
+// }
 
 .image-1, .image-2 {
-  // height: 15rem;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
-  text-align: center;
 }
 
 .perk {
@@ -49,7 +47,7 @@
   }
   .perk-text-2 {
     margin-top: 2rem;
-    grid-column: 7/13;
+
     margin-right: 2rem;
   }
   // .image-1, .image-2 {
@@ -58,6 +56,7 @@
   // }
 
   @media screen and (min-width: 768px) {
+    .image-2 { grid-row: 1/2;}
     .perk {
       margin-bottom: 2rem;
     }
@@ -65,11 +64,20 @@
       margin-top: 7rem;
       margin-bottom: 0;
       text-align: left;
+      margin-left: 0;
     }
     .perk-text-2 {
-      // margin-top: 4rem;
+      margin-top: 2rem;
       grid-column: 7/13;
       margin-right: 2rem;
+      margin-left: 1rem;
+    }
+
+    .image-1, .image-2 {
+      // height: 15rem;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      text-align: center;
     }
     // .image-1, .image-2 {
     //   height: 19rem;

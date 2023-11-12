@@ -9,15 +9,36 @@
     // h2{
     //     font-size: 3rem;
     // }
-    br {display: none;}
+    // br {display: none;}
 }
 
 .variety {
     position: absolute;
-    margin: 28rem 0 0 24rem;
+    margin: 7.2rem 0 0 4.9rem;
     color: a.$accent-color;
     h2{
-        font-size: 3rem;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #variety {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        br {display: block;}
+    }
+
+    img {
+       width: 150%;
+    }
+
+    .variety {
+        position: absolute;
+        margin: 28rem 0 0 24rem;
+        color: a.$accent-color;
+        h2{
+            font-size: 3rem;
+        }
     }
 }
 

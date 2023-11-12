@@ -2,13 +2,15 @@
 
 
 .hero-text {
-    position: absolute;
-    margin: 1rem 0 0 1rem;
+    
 
     h2{
+        margin-left: 1rem;
+        margin-top: -2rem;
         color: a.$accent-color;
-        font-size: 1.2rem;
-        font-weight: 800;
+        font-size: 1.3rem;
+        font-weight: 900;
+        br{ display: none;}
     }
 
     h3{
@@ -18,16 +20,16 @@
         // padding: 1rem 0 1rem 0;
     }
 
+    button { width: 18.5rem;}
+
     .button {
         background-color: a.$accent-color;
         color: a.$primary-color;
-        font-size: .7rem;
-        text-align: center;
+        font-size: 1rem;
         border:none ;
         padding: .3rem;
-        // margin-left: 11rem;
-        margin-top: 1.5rem;
     }
+    :hover { cursor: pointer;}
 }
 
 .content {
@@ -36,6 +38,7 @@
         margin-top: 2rem; 
         text-align: center;
         margin-bottom: 1rem;
+        font-size: .9rem;
     }
 
     li{
@@ -56,8 +59,13 @@
 }
 
 .difference {
-    text-align: center;
+    text-align: left;
+    margin-left: .5rem;
     margin-top: 2rem;
+    h2{ 
+        color: a.$accent-color;
+        font-size: 1.5rem;
+    }
     p{
         font-size: .7rem;
         margin-top: .5rem;
@@ -66,14 +74,25 @@
     }
 }
     .image-3 {
-        height: 20rem;
+        margin-bottom: -1rem;
     }
     .charge {
-        margin-left: 1.2rem;
+        margin-left: 4rem;
         h2 {
-            font-size: 1.2rem;
+            font-size: .8rem;
             padding-bottom: 1rem;
-            margin-top: 1.5rem;  
+            margin-top: -6rem;  
+            color: a.$accent-color;
+        }
+        // br { display: none;}
+        span { 
+            color: a.$primary-color;
+            font-size: 2rem;
+            background-color: a.$accent-color ;
+            border-radius: 1rem;
+            padding: .01rem;
+            padding-left: .5rem;
+            padding-right: .5rem;
         }
         p{
             line-height: 1.5rem;
@@ -85,6 +104,7 @@
 
 @media screen and (min-width: 768px) {
     .hero-text {
+        position: absolute;
         margin: 5rem 0 0 4rem;
 
         h2{
@@ -99,13 +119,13 @@
             padding: 2rem 0 2rem 0;
         }
 
+        button { width: auto;}
+
         .button {
-            background-color: a.$accent-color;
-            color: a.$primary-color;
             font-size: 1.1rem;
             text-align: center;
-            border:none ;
             padding: .5rem;
+            margin-top: 1.5rem;
         }
     }
 
@@ -117,17 +137,17 @@
     }
 
     .content {
-        font-size: 20px;
+        font-size: 1rem;
         h2{ 
-        margin-top: 2rem; 
+            margin-top: 2rem; 
             text-align: center;
+            font-size: .5rem;
         }
         li{
             list-style-type: none;
 
             p{
                 text-align: center;
-                font-size: 14px;
             }
         }
     }
@@ -146,19 +166,20 @@
 
     .image-3 {
         height: fit-content;
+        margin-bottom: 0;
     }
 
     .charge {
-        margin-top: -20rem;
-        margin-left: 0;
+        margin-left: 1.2rem;
         h2 {
             font-size: 3rem;
-            padding-bottom: 1rem;
-            
+            margin-top: -10rem;
         }
-        p{
-            margin-bottom: 0;
+        span {
+            font-size: 10rem;
         }
+        #break-2 { display: none;}
+    span:hover { color: #000;}
     }
 
 
@@ -209,14 +230,15 @@
    
 
     .charge {
+        // margin-left: 1.2rem;
         h2 {
             font-size: 3rem;
             margin-top: -10rem;
-            color: a.$accent-color;
         }
         span {
             font-size: 10rem;
         }
+        #break-2 { display: none;}
     }
     span:hover { color: #000;}
 

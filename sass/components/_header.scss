@@ -9,113 +9,140 @@ header {
         width: 48px;
         height: 48px;
         margin: 10px 0 0 10px;
-    }
-
-    #main-nav button {
-        width: 20px;
-        height: 20px;
-        background: url(../images/burger.svg) no-repeat center;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        transition: all 0.5s ease;
-        border: 0;
-      }
-      
-      #main-nav button.expanded {
-        transform: rotate(90deg);
-      }
+    }   
 }
 
+#Nav-Desktop button {
+    width: 20px;
+    height: 20px;
+    background: url(../images/burger.svg) no-repeat center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+    border: 0;
+ }
 
 
-nav {
-    height: 72px;
-}
+ #search {
+    margin-top: 24px;
+    border-radius: 10px;
+    text-align: center;
+ }
+ 
+ #main-logo {
+    margin-top: 10px;
+    width: 90%;
+ }
+
+ #Nav-Deskop {
+    margin-top: 3px;
+    margin-left: 11px;
+ }
 
 
-#button {
-    height: 30px;
-    width: 45px;
-    margin-top: 8px;
-    transition: all 1 ease;
-    color: rgb(62, 131, 131);
-}
-
-#burger-con{
+ #Nav-Desktop button.expanded {
+    transform: rotate(90deg);
+ }
+ 
+ #burger-con {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
     display: none;
-    background-color: #fff;   
+    position: absolute;
+    background-color: #fff;
+    height: 380px;
 }
-
+ 
 #burger-con.slide-toggle {
     display: block;
-    right: 0;
     left: 0;
+    right: 0;
+}
+
+#burger-con ul li {
+    border-bottom: 2px solid #efefef;
+    margin-bottom: 10px;
+    font-size: 21px;
 }
 
 #burger-con ul {
-    list-style: none;
-    padding: 0;
-    
-    li { 
-        text-align: center;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #000;   
-        padding: 10px 0 15px 0;    
-    }
-
-    li a {
-        text-decoration: none;
-        color: a.$secondary-color;
-        font-weight: 450;      
-        font-size: 19px;    
-        letter-spacing: 2px;
-    }
+    padding-left: 0;
 }
 
+
+#burger-con ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+#burger-con ul li a:hover {
+    color: a.$accent-color;
+}
 
 
 
 @media screen and (min-width: 768px) {
+    #header {
+        position: sticky;
+        height: 72px;
+        }
+
     header img {  
         margin: 1rem;
     }
-    
-    #button {
+   
+    #Nav-Desktop button {
         display: none;
     }
 
-    .desktop ul li { 
-        text-decoration: none;
-        
-    }
-
-    .desktop ul li a { 
-        display: inline;  
-    }
-
-    nav { 
-        grid-row: 1/2;
-        grid-column: 2/-1;
-    }
- 
     #burger-con {
-        display: block;
-        margin-top: 1.5rem;
-        
-        background: none;
-        
-        ul li { display: inline;
-            border-bottom: none;
-            padding-right: 1rem;
-        }
-   
-        ul li a {
-            font-size: .8rem;
-            border-bottom: none;
-        }
-
+        display: contents;
+        position: relative;
+        height: 0;
     }
+
+    #burger-con.slide-toggle {
+        left: 0;
+        right: 0;
+    }
+
+    #burger-con ul li {
+        border-bottom: none;
+    }
+
+    #burger-con ul li a { display: inline;}
+
+    #burger-con ul { margin-top: 44px;}
+    #Nav-Desktop {
+        // grid-row: 1/3;
+        padding-left: 0;
+    }
+  
+    #Nav-Desktop ul li {
+        display: inline;
+        font-size: 1rem;
+        margin-right: 27px;
+    }
+    
+    #Nav-Desktop ul li a {
+        color: #000;
+        letter-spacing: 2px;
+    }
+    
+    #Nav-Desktop ul li a:hover {
+        color: a.$accent-color;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+   
+       
+ 
 }
+
+
 
 @media screen and (min-width: 1200px) {
 
@@ -134,3 +161,5 @@ nav {
       
     
 }
+
+

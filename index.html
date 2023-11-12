@@ -15,7 +15,8 @@
     <h1 class="hidden">YAJ Earbuds</h1>
     <header class="grid-con" id="header">
         <img class="m-col-start-2" src="images/LOGO.svg" alt="YAJ logo">
-            <nav id="mainNav" class="col-end-5 m-col-start-4 m-col-end-10 l-col-start-5 l-col-end-10">
+            
+        <nav class="col-end-5 m-col-start-4 m-col-end-12 l-col-start-5 l-col-end-10" id="Nav-Desktop">
             <h2 class="hidden">Main Navigation</h2>
             <button id="button"></button>
             <div id="burger-con">
@@ -27,13 +28,14 @@
                 </ul>
             </div>
         </nav>
+
     </header>
 
     <main>
         <div class=" hero grid-con">
             <img class="col-span-full" src="images/hero.png" alt="Hero image of Yaj">
-            <section class=" hero-text l-col-start-4 l-col-end-9"> 
-                <h2>NEW ERA<br>OF SOUNDS</h2>
+            <section class=" hero-text col-span-full l-col-start-4 l-col-end-9"> 
+                <h2>NEW ERA <br>OF SOUNDS</h2>
                 <h3>Perfect sound for every music</h3>
                 <button class="button">Buy Now</button>
             </section>
@@ -54,15 +56,16 @@
             </section>
         </section>    
         <section class="panel">   
-            <section class="perk grid-con">
-                    <div class="image-2 col-span-full m-col-start-1 m-col-end-7">
-                        <img class="side_1" src="images/side_1.png" alt="Image of the side profile of the earbuds">
-                    </div>
+            <section class="perk grid-con" id="mobPerk">
+                    
 
                 <div class="perk-text-2 col-span-full m-col-end-12 l-col-start-8 l-col-end-12">
                     <h4>MIND YOUR SURROUNDINGS</h4>
                     <h2>AWARENESS MODE</h2>
                     <p>Every day is different. We get it. Awareness Mode keeps you alert to what’s happening around. Name mispronounced in usual coffee shop? Heard. Important airport announcements? With awareness mode phone calls sound more natural.</p>    
+                </div>
+                <div class="image-2 col-span-full m-col-start-1 m-col-end-7">
+                    <img class="side_1" src="images/side_1.png" alt="Image of the side profile of the earbuds">
                 </div>
             </section>
         </section>
@@ -70,14 +73,15 @@
 
         <section class="panel">            
             <section class="perk grid-con">
-                    <div class="image-2 col-span-full m-col-start-1 m-col-end-7">
-                        <img class="side_2" src="images/side_1.png" alt="Image of the side profile of the earbuds">
-                    </div>
+                    
 
                 <div class="perk-text-2 col-span-full m-col-end-12 l-col-start-8 l-col-end-12">
                     <h4>MIND YOUR SURROUNDINGS</h4>
                     <h2>AWARENESS MODE</h2>
                     <p>Every day is different. We get it. Awareness Mode keeps you alert to what’s happening around. Name mispronounced in usual coffee shop? Heard. Important airport announcements? With awareness mode phone calls sound more natural.</p>    
+                </div>
+                <div class="image-2 col-span-full m-col-start-1 m-col-end-7">
+                    <img class="side_2" src="images/side_1.png" alt="Image of the side profile of the earbuds">
                 </div>
             </section>
         </section>
@@ -96,7 +100,9 @@
             <div class="col-span-full">
                 <img src="images/allColors.png" alt="Variety of  Colors">
             </div>
-            <div class="variety"><h2>WHAT COLOR ARE YOU <br> TODAY?</h2></div>
+            <div class="variety">
+                <h2>WHAT COLOR ARE YOU <br> TODAY?</h2>
+            </div>
         </section>
 
 
@@ -143,8 +149,8 @@
         </section>
         <section class="grid-con">
             <div class="image-3 col-span-full"><img src="images/hours.jpg" alt="image of earbuds"></div>
-            <div class="charge col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12">
-                <h2> Powered For Days <br><span>72</span> Hours of Battery Life </h2>
+            <div class="charge col-start-2 col-end-5 m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12">
+                <h2> Powered For Days <br><span>72</span><br id="break-2"> Hours of Battery Life </h2>
                 <!-- <p>It’s the peace of mind for us when you don’t have to worry running out of battery. Up to 8 hours playtime on a single charge. The charging capsule charges your earbuds up to 3 times while on the go.</p> -->
             </div>
         </section>
@@ -201,17 +207,17 @@
           <section class=" gallery grid-con">
             <!-- <div class="gallery col-span-full" id="cards"> -->
             
-                <div class="m-col-start-1 m-col-end-3 card">
+                <div class="col-start-1 col-end-4 m-col-start-1 m-col-end-3 card">
                     <img src="images/gallery/1.jpg" alt="image of customer using YAJ Earbuds">
                     <h4><a>see more</a></h4>
                 </div>
-                <div class="m-col-start-1 m-col-end-3 cards" id="cards">
+                <div class="col-start-1 col-end-4  m-col-start-1 m-col-end-3 cards" id="cards">
                     <img src="images/gallery/6.jpg" alt="image of customer using YAJ Earbuds">
                 </div>
-                <div class="m-col-start-3 m-col-end-7 card" id="card_B">
+                <div class="col-start-4 col-end-5  m-col-start-3 m-col-end-7 card" id="card_B">
                     <img src="images/gallery/3.jpg" alt="image of customer using YAJ Earbuds">
                 </div>
-                <div class="m-col-start-7 m-col-end-10 card">
+                <div class="col col-span-full m-col-end-10 card">
                     <img src="images/gallery/5.jpg" alt="image of customer using YAJ Earbuds">
                     <h4><a>see more</a></h4>
                 </div>
@@ -220,14 +226,14 @@
                     <h4><a>see more</a></h4>
                 </div>
                 <div class="m-col-start-10 m-col-end-13 card">
-                    <img src="images/gallery/4.jpg" alt="image of customer using YAJ Earbuds">
+                    <img src="col-start-4 col-end-5  images/gallery/4.jpg" alt="image of customer using YAJ Earbuds">
                     <h4><a>see more</a></h4>
                 </div>
                 <div class="m-col-start-10 m-col-end-13 cards">
                     <img src="images/gallery/2.jpg" alt="image of customer using YAJ Earbuds">
                     <h4><a>see more</a></h4>
                 </div>  
-                <div class="m-col-start-1 m-col-end-7 cards" id="cardText">
+                <div class="col-span-full m-col-start-1 m-col-end-7 cards" id="cardText">
                     <h2>Join YAJ Community</h2>
                 </div> 
             
