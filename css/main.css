@@ -124,7 +124,7 @@ model-viewer > #ar-prompt > img {
   display: none;
 }
 
-header {
+header #header {
   position: sticky;
   height: 72px;
 }
@@ -132,6 +132,18 @@ header img {
   width: 48px;
   height: 48px;
   margin: 10px 0 0 10px;
+}
+header #main-nav button {
+  width: 20px;
+  height: 20px;
+  background: url(../images/burger.svg) no-repeat center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+  border: 0;
+}
+header #main-nav button.expanded {
+  transform: rotate(90deg);
 }
 
 nav {
@@ -226,8 +238,9 @@ footer h2 {
 }
 footer .footerNav {
   font-size: 0.9rem;
-  margin-top: 0.8;
-  margin-left: 3.9rem;
+  margin-left: -1.9rem;
+  grid-row: 2/2;
+  margin-bottom: 2.1rem;
 }
 footer .footerNav ul li {
   padding-bottom: 0.5rem;
@@ -239,10 +252,11 @@ footer .footerNav a {
 }
 footer .footer-icons {
   text-align: center;
+  grid-row: 1/2;
 }
 footer .footer-icons h2 {
   font-size: 0.7rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 footer .footer-icons img {
   width: 2rem;
@@ -252,6 +266,10 @@ footer .footer-icons img {
 footer form {
   display: inline-flex;
   margin-left: 3rem;
+}
+footer form #mail {
+  width: 15rem;
+  margin-right: 0.2rem;
 }
 footer form #sub {
   width: 1.5rem;
@@ -280,7 +298,6 @@ footer .form h2 {
   }
   footer .footerNav {
     font-size: 14px;
-    margin-top: 20px;
   }
   footer .footerNav ul li {
     padding-bottom: 0.5rem;
@@ -294,7 +311,6 @@ footer .form h2 {
   }
   footer .footer-icons h2 {
     font-size: 1rem;
-    margin-top: 1.2rem;
   }
   footer .footer-icons img {
     width: 2rem;
@@ -313,6 +329,30 @@ footer .form h2 {
     font-size: 1rem;
     text-align: left;
   }
+  footer .location {
+    grid-row: 2/2;
+    margin-top: 1rem;
+  }
+  footer .location h3 a {
+    text-decoration: none;
+  }
+  footer .location h4 {
+    font-weight: 400;
+    margin-left: 2.5rem;
+  }
+  footer .location a {
+    color: #ffffff;
+  }
+  footer .lan {
+    margin-top: 1rem;
+  }
+  footer .lan h4 {
+    font-size: 1rem;
+  }
+  footer .lan h4 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
   #copyright {
     font-size: 12px;
   }
@@ -326,7 +366,6 @@ footer .form h2 {
   }
   footer .footerNav {
     font-size: 16px;
-    margin-top: 20px;
   }
   footer .footerNav ul li {
     padding-bottom: 0.5rem;
@@ -337,9 +376,10 @@ footer .form h2 {
   }
   footer .footer-icons {
     text-align: center;
+    margin-top: -1rem;
   }
   footer .footer-icons h2 {
-    font-size: 20px;
+    font-size: 1rem;
   }
   footer .footer-icons img {
     width: 2.5rem;
@@ -354,7 +394,7 @@ footer .form h2 {
   }
   footer .form h2 {
     padding: 2rem 0 0.4rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   #copyright {
     font-size: 12px;
@@ -464,6 +504,11 @@ body {
     width: 150%;
   }
 }
+.panel {
+  position: relative;
+  overflow: hidden;
+}
+
 .perk {
   margin-bottom: 2rem;
   background-color: #fff;
@@ -496,7 +541,6 @@ body {
 }
 
 .image-1, .image-2 {
-  height: 15rem;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   text-align: center;
@@ -518,34 +562,21 @@ body {
   margin-right: 2rem;
 }
 
-.image-1, .image-2 {
-  height: 19rem;
-  margin-bottom: 1rem;
-}
-
 @media screen and (min-width: 768px) {
   .perk {
     margin-bottom: 2rem;
   }
   .perk-text, .perk-text-2 {
-    margin-top: 4rem;
+    margin-top: 7rem;
     margin-bottom: 0;
     text-align: left;
   }
   .perk-text-2 {
-    margin-top: 2rem;
     grid-column: 7/13;
     margin-right: 2rem;
   }
-  .image-1, .image-2 {
-    height: 19rem;
-    margin-bottom: 1rem;
-  }
 }
 @media screen and (min-width: 1200px) {
-  .perk-text, .perk-text-2 {
-    margin-top: 4rem;
-  }
   .perk-text h4, .perk-text-2 h4 {
     font-size: 1rem;
   }
@@ -556,15 +587,86 @@ body {
   .perk-text-2 {
     margin-right: 0;
   }
-  .image-1, .image-2 {
-    height: 22rem;
-    margin-bottom: 3rem;
-  }
-  #side_1, #side_2 {
-    max-width: 60%;
-    margin-top: -2.4rem;
+  .side_1, .side_2 {
+    max-width: 70%;
+    margin-top: 1rem;
   }
 }
+.gallery {
+  margin-bottom: 3rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.cards:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.card {
+  grid-row: 1/2;
+  margin-left: 5px;
+  margin-right: -10px;
+  padding-right: 0;
+}
+.card :hover ~ h4 {
+  opacity: 1;
+  transition: ease-in;
+  padding-top: 1rem;
+  text-decoration: underline;
+  transition-duration: 0.2s;
+}
+.card h4 {
+  margin-top: -8rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.cards {
+  grid-row: 2/2;
+  margin-top: -7.7rem;
+  margin-left: 5px;
+  margin-right: -10px;
+  padding-right: 0;
+}
+.cards :hover ~ h4 {
+  opacity: 1;
+  transition: ease-in;
+  padding-top: 1rem;
+  text-decoration: underline;
+  transition-duration: 0.1s;
+}
+.cards h4 {
+  margin-top: -8rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+}
+
+#cards {
+  margin-top: -13.5rem;
+}
+
+#cardText {
+  margin-top: 2.4rem;
+  font-size: 2rem;
+  text-align: center;
+}
+#cardText h2 {
+  border: solid 0.3rem #51068B;
+  padding: 0.5rem;
+}
+#cardText :hover {
+  background-color: #51068B;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 .hero-text {
   position: absolute;
   margin: 1rem 0 0 1rem;
@@ -619,43 +721,8 @@ body {
   line-height: 1.1rem;
 }
 
-.perk {
-  margin-bottom: 2rem;
-}
-
-.perk-text, .perk-text-2 {
-  margin-top: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.perk-text h4, .perk-text-2 h4 {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-}
-.perk-text h2, .perk-text-2 h2 {
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-}
-.perk-text p, .perk-text-2 p {
-  line-height: 1.6rem;
-  text-align: left;
-}
-
-.perk-text-2 {
-  margin-left: 1rem;
-}
-
-.image-1, .image-2 {
-  height: 15rem;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .image-3 {
   height: 20rem;
-  background-color: blanchedalmond;
 }
 
 .charge {
@@ -723,34 +790,17 @@ body {
     margin-bottom: 4rem;
     line-height: 1.5rem;
   }
-  .perk {
-    margin-bottom: 2rem;
-  }
-  .perk-text, .perk-text-2 {
-    margin-top: 4rem;
-    margin-bottom: 0;
-    text-align: left;
-  }
-  .perk-text-2 {
-    margin-top: 2rem;
-    grid-column: 7/13;
-    margin-right: 2rem;
-  }
-  .image-1, .image-2 {
-    height: 19rem;
-    margin-bottom: 1rem;
-  }
   .image-3 {
-    height: 23rem;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .charge {
     margin-top: -20rem;
     margin-left: 0;
   }
   .charge h2 {
-    font-size: 1.2rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
-    margin-top: 3rem;
   }
   .charge p {
     margin-bottom: 0;
@@ -787,24 +837,15 @@ body {
     font-size: 1.1rem;
     margin-bottom: 2rem;
   }
-  .perk-text, .perk-text-2 {
-    margin-top: 4rem;
-  }
-  .perk-text h4, .perk-text-2 h4 {
-    font-size: 1rem;
-  }
-  .perk-text h2, .perk-text-2 h2 {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-  }
-  .perk-text-2 {
-    margin-right: 0;
-  }
-  .image-1, .image-2 {
-    height: 22rem;
-    margin-bottom: 3rem;
-  }
   .charge h2 {
-    font-size: 1.9rem;
+    font-size: 3rem;
+    margin-top: -10rem;
+    color: #51068B;
+  }
+  .charge span {
+    font-size: 10rem;
+  }
+  span:hover {
+    color: #000;
   }
 }/*# sourceMappingURL=main.css.map */
