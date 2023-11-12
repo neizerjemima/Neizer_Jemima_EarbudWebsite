@@ -1,8 +1,8 @@
 //Hamburger Menu
 (() => {
   (function () {
-      // "use strict";
-      // console.log("fired");
+      "use strict";
+      console.log("fired");
   
 
       let button = document.querySelector("#button");

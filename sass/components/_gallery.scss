@@ -1,6 +1,24 @@
 @use '../abstracts' as a;
 
+.card { display: none;}
 
+#cardText { 
+    margin-top: 2.4rem;
+    font-size: .5rem;
+    text-align: center;
+    h2{
+        border: solid .3rem a.$accent-color ;
+        padding: .5rem;
+        }
+        :hover {
+            background-color: a.$accent-color;
+            color: a.$primary-color;
+            font-weight: 300;
+            cursor: pointer;
+        }
+}
+
+@media screen and (min-width: 768px) {
 .gallery { margin-bottom: 3rem;}
 
 .card:hover {
@@ -75,4 +93,5 @@
             font-weight: 400;
             cursor: pointer;
         }
+}
 }

@@ -133,90 +133,119 @@ header img {
   height: 48px;
   margin: 10px 0 0 10px;
 }
-header #main-nav button {
+
+#Nav-Desktop button {
   width: 20px;
   height: 20px;
   background: url(../images/burger.svg) no-repeat center;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
   transition: all 0.5s ease;
   border: 0;
 }
-header #main-nav button.expanded {
+
+#search {
+  margin-top: 24px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#main-logo {
+  margin-top: 10px;
+  width: 90%;
+}
+
+#Nav-Deskop {
+  margin-top: 3px;
+  margin-left: 11px;
+}
+
+#Nav-Desktop button.expanded {
   transform: rotate(90deg);
 }
 
-nav {
-  height: 72px;
-}
-
-#button {
-  height: 30px;
-  width: 45px;
-  margin-top: 8px;
-  transition: all 1 ease;
-  color: rgb(62, 131, 131);
-}
-
 #burger-con {
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
   display: none;
+  position: absolute;
   background-color: #fff;
+  height: 380px;
 }
 
 #burger-con.slide-toggle {
   display: block;
-  right: 0;
   left: 0;
+  right: 0;
+}
+
+#burger-con ul li {
+  border-bottom: 2px solid #efefef;
+  margin-bottom: 10px;
+  font-size: 21px;
 }
 
 #burger-con ul {
-  list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
-#burger-con ul li {
-  text-align: center;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #000;
-  padding: 10px 0 15px 0;
-}
+
 #burger-con ul li a {
+  display: block;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: #000;
   text-decoration: none;
-  color: #000000;
-  font-weight: 450;
-  font-size: 19px;
-  letter-spacing: 2px;
+}
+
+#burger-con ul li a:hover {
+  color: #51068B;
 }
 
 @media screen and (min-width: 768px) {
+  #header {
+    position: sticky;
+    height: 72px;
+  }
   header img {
     margin: 1rem;
   }
-  #button {
+  #Nav-Desktop button {
     display: none;
   }
-  .desktop ul li {
-    text-decoration: none;
-  }
-  .desktop ul li a {
-    display: inline;
-  }
-  nav {
-    grid-row: 1/2;
-    grid-column: 2/-1;
-  }
   #burger-con {
-    display: block;
-    margin-top: 1.5rem;
-    background: none;
+    display: contents;
+    position: relative;
+    height: 0;
+  }
+  #burger-con.slide-toggle {
+    left: 0;
+    right: 0;
   }
   #burger-con ul li {
-    display: inline;
     border-bottom: none;
-    padding-right: 1rem;
   }
   #burger-con ul li a {
-    font-size: 0.8rem;
-    border-bottom: none;
+    display: inline;
+  }
+  #burger-con ul {
+    margin-top: 44px;
+  }
+  #Nav-Desktop {
+    padding-left: 0;
+  }
+  #Nav-Desktop ul li {
+    display: inline;
+    font-size: 1rem;
+    margin-right: 27px;
+  }
+  #Nav-Desktop ul li a {
+    color: #000;
+    letter-spacing: 2px;
+  }
+  #Nav-Desktop ul li a:hover {
+    color: #51068B;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -479,19 +508,36 @@ body {
   text-align: center;
   margin-bottom: 1rem;
 }
-#variety br {
-  display: none;
-}
 
 .variety {
   position: absolute;
-  margin: 28rem 0 0 24rem;
+  margin: 7.2rem 0 0 4.9rem;
   color: #51068B;
 }
 .variety h2 {
-  font-size: 3rem;
+  font-size: 0.9rem;
 }
 
+@media screen and (min-width: 768px) {
+  #variety {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  #variety br {
+    display: block;
+  }
+  img {
+    width: 150%;
+  }
+  .variety {
+    position: absolute;
+    margin: 28rem 0 0 24rem;
+    color: #51068B;
+  }
+  .variety h2 {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   #variety {
     font-size: 2.5rem;
@@ -518,6 +564,7 @@ body {
   margin-top: 1rem;
   text-align: center;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .perk-text h4, .perk-text-2 h4 {
@@ -536,14 +583,8 @@ body {
   text-align: left;
 }
 
-.perk-text-2 {
-  margin-left: 1rem;
-}
-
 .image-1, .image-2 {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
-  text-align: center;
 }
 
 .perk {
@@ -558,11 +599,13 @@ body {
 
 .perk-text-2 {
   margin-top: 2rem;
-  grid-column: 7/13;
   margin-right: 2rem;
 }
 
 @media screen and (min-width: 768px) {
+  .image-2 {
+    grid-row: 1/2;
+  }
   .perk {
     margin-bottom: 2rem;
   }
@@ -570,10 +613,18 @@ body {
     margin-top: 7rem;
     margin-bottom: 0;
     text-align: left;
+    margin-left: 0;
   }
   .perk-text-2 {
+    margin-top: 2rem;
     grid-column: 7/13;
     margin-right: 2rem;
+    margin-left: 1rem;
+  }
+  .image-1, .image-2 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -592,68 +643,13 @@ body {
     margin-top: 1rem;
   }
 }
-.gallery {
-  margin-bottom: 3rem;
-}
-
-.card:hover {
-  cursor: pointer;
-  filter: brightness(50%);
-}
-
-.cards:hover {
-  cursor: pointer;
-  filter: brightness(50%);
-}
-
 .card {
-  grid-row: 1/2;
-  margin-left: 5px;
-  margin-right: -10px;
-  padding-right: 0;
-}
-.card :hover ~ h4 {
-  opacity: 1;
-  transition: ease-in;
-  padding-top: 1rem;
-  text-decoration: underline;
-  transition-duration: 0.2s;
-}
-.card h4 {
-  margin-top: -8rem;
-  text-align: center;
-  color: #ffffff;
-  opacity: 0;
-}
-
-.cards {
-  grid-row: 2/2;
-  margin-top: -7.7rem;
-  margin-left: 5px;
-  margin-right: -10px;
-  padding-right: 0;
-}
-.cards :hover ~ h4 {
-  opacity: 1;
-  transition: ease-in;
-  padding-top: 1rem;
-  text-decoration: underline;
-  transition-duration: 0.1s;
-}
-.cards h4 {
-  margin-top: -8rem;
-  text-align: center;
-  color: #ffffff;
-  opacity: 0;
-}
-
-#cards {
-  margin-top: -13.5rem;
+  display: none;
 }
 
 #cardText {
   margin-top: 2.4rem;
-  font-size: 2rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 #cardText h2 {
@@ -663,30 +659,105 @@ body {
 #cardText :hover {
   background-color: #51068B;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 300;
   cursor: pointer;
 }
 
-.hero-text {
-  position: absolute;
-  margin: 1rem 0 0 1rem;
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin-bottom: 3rem;
+  }
+  .card:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+  }
+  .cards:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+  }
+  .card {
+    grid-row: 1/2;
+    margin-left: 5px;
+    margin-right: -10px;
+    padding-right: 0;
+  }
+  .card :hover ~ h4 {
+    opacity: 1;
+    transition: ease-in;
+    padding-top: 1rem;
+    text-decoration: underline;
+    transition-duration: 0.2s;
+  }
+  .card h4 {
+    margin-top: -8rem;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+  }
+  .cards {
+    grid-row: 2/2;
+    margin-top: -7.7rem;
+    margin-left: 5px;
+    margin-right: -10px;
+    padding-right: 0;
+  }
+  .cards :hover ~ h4 {
+    opacity: 1;
+    transition: ease-in;
+    padding-top: 1rem;
+    text-decoration: underline;
+    transition-duration: 0.1s;
+  }
+  .cards h4 {
+    margin-top: -8rem;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+  }
+  #cards {
+    margin-top: -13.5rem;
+  }
+  #cardText {
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #cardText h2 {
+    border: solid 0.3rem #51068B;
+    padding: 0.5rem;
+  }
+  #cardText :hover {
+    background-color: #51068B;
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
+  }
 }
 .hero-text h2 {
+  margin-left: 1rem;
+  margin-top: -2rem;
   color: #51068B;
-  font-size: 1.2rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.hero-text h2 br {
+  display: none;
 }
 .hero-text h3 {
   display: none;
 }
+.hero-text button {
+  width: 18.5rem;
+}
 .hero-text .button {
   background-color: #51068B;
   color: #ffffff;
-  font-size: 0.7rem;
-  text-align: center;
+  font-size: 1rem;
   border: none;
   padding: 0.3rem;
-  margin-top: 1.5rem;
+}
+.hero-text :hover {
+  cursor: pointer;
 }
 
 .content {
@@ -696,6 +767,7 @@ body {
   margin-top: 2rem;
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 .content li {
   list-style-type: none;
@@ -711,8 +783,13 @@ body {
 }
 
 .difference {
-  text-align: center;
+  text-align: left;
+  margin-left: 0.5rem;
   margin-top: 2rem;
+}
+.difference h2 {
+  color: #51068B;
+  font-size: 1.5rem;
 }
 .difference p {
   font-size: 0.7rem;
@@ -722,16 +799,26 @@ body {
 }
 
 .image-3 {
-  height: 20rem;
+  margin-bottom: -1rem;
 }
 
 .charge {
-  margin-left: 1.2rem;
+  margin-left: 4rem;
 }
 .charge h2 {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   padding-bottom: 1rem;
-  margin-top: 1.5rem;
+  margin-top: -6rem;
+  color: #51068B;
+}
+.charge span {
+  color: #ffffff;
+  font-size: 2rem;
+  background-color: #51068B;
+  border-radius: 1rem;
+  padding: 0.01rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .charge p {
   line-height: 1.5rem;
@@ -740,6 +827,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero-text {
+    position: absolute;
     margin: 5rem 0 0 4rem;
   }
   .hero-text h2 {
@@ -752,13 +840,14 @@ body {
     font-size: 1.2rem;
     padding: 2rem 0 2rem 0;
   }
+  .hero-text button {
+    width: auto;
+  }
   .hero-text .button {
-    background-color: #51068B;
-    color: #ffffff;
     font-size: 1.1rem;
     text-align: center;
-    border: none;
     padding: 0.5rem;
+    margin-top: 1.5rem;
   }
   .button:hover {
     font-weight: 580;
@@ -767,18 +856,18 @@ body {
     border: solid 0.2rem #51068B;
   }
   .content {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .content h2 {
     margin-top: 2rem;
     text-align: center;
+    font-size: 0.5rem;
   }
   .content li {
     list-style-type: none;
   }
   .content li p {
     text-align: center;
-    font-size: 14px;
   }
   .difference {
     text-align: center;
@@ -793,17 +882,23 @@ body {
   .image-3 {
     height: -moz-fit-content;
     height: fit-content;
+    margin-bottom: 0;
   }
   .charge {
-    margin-top: -20rem;
-    margin-left: 0;
+    margin-left: 1.2rem;
   }
   .charge h2 {
     font-size: 3rem;
-    padding-bottom: 1rem;
+    margin-top: -10rem;
   }
-  .charge p {
-    margin-bottom: 0;
+  .charge span {
+    font-size: 10rem;
+  }
+  .charge #break-2 {
+    display: none;
+  }
+  .charge span:hover {
+    color: #000;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -840,10 +935,12 @@ body {
   .charge h2 {
     font-size: 3rem;
     margin-top: -10rem;
-    color: #51068B;
   }
   .charge span {
     font-size: 10rem;
+  }
+  .charge #break-2 {
+    display: none;
   }
   span:hover {
     color: #000;
