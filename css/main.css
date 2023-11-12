@@ -259,7 +259,7 @@ header img {
   }
 }
 footer {
-  background-color: #000;
+  background-color: #000000;
   grid-auto-rows: min-content;
 }
 footer h2 {
@@ -267,9 +267,8 @@ footer h2 {
 }
 footer .footerNav {
   font-size: 0.9rem;
-  margin-left: -1.9rem;
-  grid-row: 2/2;
-  margin-bottom: 2.1rem;
+  grid-row: 3/5;
+  margin-top: 5rem;
 }
 footer .footerNav ul li {
   padding-bottom: 0.5rem;
@@ -281,11 +280,11 @@ footer .footerNav a {
 }
 footer .footer-icons {
   text-align: center;
-  grid-row: 1/2;
+  grid-row: 2/5;
 }
 footer .footer-icons h2 {
   font-size: 0.7rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 footer .footer-icons img {
   width: 2rem;
@@ -294,7 +293,7 @@ footer .footer-icons img {
 }
 footer form {
   display: inline-flex;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 footer form #mail {
   width: 15rem;
@@ -309,6 +308,36 @@ footer .form h2 {
   text-align: center;
 }
 
+.location {
+  margin-top: 1rem;
+}
+.location h3 a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.location h4 {
+  font-weight: 400;
+  margin-left: 2.5rem;
+}
+.location a {
+  color: #ffffff;
+}
+
+.lan {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+.lan h4 {
+  font-size: 0.9rem;
+}
+.lan h4 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 #copyright {
   color: #fff;
   background-color: #131313;
@@ -319,7 +348,6 @@ footer .form h2 {
 
 @media screen and (min-width: 768px) {
   footer {
-    background-color: #000;
     grid-auto-rows: min-content;
   }
   footer h2 {
@@ -327,6 +355,9 @@ footer .form h2 {
   }
   footer .footerNav {
     font-size: 14px;
+    margin-top: 2rem;
+    margin-bottom: 2.1rem;
+    grid-row: none;
   }
   footer .footerNav ul li {
     padding-bottom: 0.5rem;
@@ -337,9 +368,11 @@ footer .form h2 {
   }
   footer .footer-icons {
     text-align: center;
+    grid-row: 1/3;
   }
   footer .footer-icons h2 {
     font-size: 1rem;
+    margin-top: 3rem;
   }
   footer .footer-icons img {
     width: 2rem;
@@ -349,6 +382,7 @@ footer .form h2 {
   footer form {
     display: inline-flex;
     margin-left: 0;
+    grid-row: none;
   }
   footer form #sub {
     width: 1.5rem;
@@ -360,20 +394,17 @@ footer .form h2 {
   }
   footer .location {
     grid-row: 2/2;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
   }
   footer .location h3 a {
     text-decoration: none;
-  }
-  footer .location h4 {
-    font-weight: 400;
-    margin-left: 2.5rem;
-  }
-  footer .location a {
-    color: #ffffff;
+    font-size: auto;
+    margin-left: 0;
   }
   footer .lan {
-    margin-top: 1rem;
+    margin-top: 3rem;
+    grid-row: 2/2;
   }
   footer .lan h4 {
     font-size: 1rem;
@@ -643,13 +674,26 @@ body {
     margin-top: 1rem;
   }
 }
-.card {
+.gallery {
+  background-image: url(../images/background.png);
+}
+
+.cards, #card_B {
   display: none;
 }
 
+.cards h4, .card h4 {
+  display: none;
+}
+
+#cards_S {
+  margin-left: -1rem;
+}
+
 #cardText {
-  margin-top: 2.4rem;
+  display: block;
   font-size: 0.5rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 #cardText h2 {
@@ -666,6 +710,10 @@ body {
 @media screen and (min-width: 768px) {
   .gallery {
     margin-bottom: 3rem;
+    background-image: none;
+  }
+  #card_B {
+    display: block;
   }
   .card:hover {
     cursor: pointer;
@@ -695,6 +743,7 @@ body {
     opacity: 0;
   }
   .cards {
+    display: block;
     grid-row: 2/2;
     margin-top: -7.7rem;
     margin-left: 5px;
