@@ -23,6 +23,90 @@
 }
 
 @media screen and (min-width: 768px) {
+    .gallery { 
+        margin-bottom: 3rem;
+        background-image: none;
+    }
+    #card_B {display: block;}
+    
+    .card:hover {
+        cursor: pointer;
+        // opacity: 0.1;
+        filter: brightness(50%);
+    }
+    .cards:hover {
+        cursor: pointer;
+        // opacity: 0.1;
+        filter: brightness(50%);
+    }
+    
+    .card{
+        grid-row:1/2 ;
+        margin-left: 5px;
+        margin-right: -10px;
+        padding-right: 0;
+       
+        :hover~h4 { 
+            opacity: 1;
+            transition: ease-in;
+            padding-top: 1rem;
+            text-decoration: underline;
+            transition-duration: .2s;
+        }
+        h4{ 
+            margin-top: -8rem;
+            text-align: center;
+            color: a.$primary-color;
+            opacity: 0;
+            
+        }
+        
+    } 
+    .cards {
+        display: block;
+        grid-row:2/2 ;
+        margin-top: -5rem;
+        margin-left: 5px;
+        margin-right: -10px;
+        padding-right: 0;
+    
+        :hover~h4 { 
+            opacity: 1;
+            transition: ease-in;
+            padding-top: 1rem;
+            text-decoration: underline;
+            transition-duration: .1s;
+        }
+        h4{ 
+            margin-top: -8rem;
+            text-align: center;
+            color: a.$primary-color;
+            opacity: 0;
+        }
+        
+    }
+    #cards_S {
+        margin-left: 0;
+      }    
+    #cards { margin-top: -9rem;}
+    #cardText { 
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        h2{
+            border: solid .3rem a.$accent-color ;
+            padding: .5rem;
+            }
+            :hover {
+                background-color: a.$accent-color;
+                color: a.$primary-color;
+                font-weight: 400;
+                cursor: pointer;
+            }
+    }
+    }
+
+@media screen and (min-width: 1200px) {
 .gallery { 
     margin-bottom: 3rem;
     background-image: none;
