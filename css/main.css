@@ -533,18 +533,18 @@ p:hover {
   }
   #outerShell {
     display: block;
-    max-width: 1200px;
+    max-width: 768px;
   }
   #imageCon {
     position: relative;
-    max-width: 1200px;
-    height: 650px;
+    max-width: 768px;
+    height: 419px;
   }
   .slideImage {
     position: absolute;
     left: 0;
     right: 0;
-    height: 650px;
+    height: 419px;
   }
   .image-right {
     background: url(../images/Earbud_X-ray.png) no-repeat;
@@ -561,30 +561,43 @@ p:hover {
   .image-drag {
     background-color: #51068B;
     left: 50%;
-    width: 0.3rem;
+    width: 0.2rem;
     cursor: pointer;
   }
+  .image-drag:before, .image-drag:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 19rem;
+    width: 1.5rem;
+    height: 2.5rem;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .image-drag:after {
+    left: -1.5rem;
+    background: #51068B;
+    transform: rotate(46deg);
+    transform-origin: 100% 100%;
+  }
 }
-.image-drag:before, .image-drag:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 19rem;
-  width: 1.5rem;
-  height: 2.5rem;
-  background: red;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+@media screen and (min-width: 1200px) {
+  #outerShell {
+    max-width: 1200px;
+  }
+  #imageCon {
+    max-width: 1200px;
+    height: 650px;
+  }
+  .slideImage {
+    height: 650px;
+  }
+  .image-drag {
+    width: 0.3rem;
+  }
 }
-
-.image-drag:after {
-  left: -1.5rem;
-  background: #51068B;
-  transform: rotate(46deg);
-  transform-origin: 100% 100%;
-}
-
 #scrollAnim {
   max-width: 100%;
 }
@@ -650,24 +663,18 @@ body {
     width: 150%;
   }
   .variety {
-    position: absolute;
-    margin: 25rem 0 0 24rem;
-    color: #51068B;
+    margin: 17rem 0 0 11.6rem;
   }
   .variety h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  #variety {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  .variety {
+    margin: 25rem 0 0 24rem;
   }
-  #variety br {
-    display: block;
-  }
-  img {
-    width: 150%;
+  .variety h2 {
+    font-size: 3rem;
   }
 }
 .panel {
@@ -797,6 +804,84 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .gallery {
+    margin-bottom: 3rem;
+    background-image: none;
+  }
+  #card_B {
+    display: block;
+  }
+  .card:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+  }
+  .cards:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+  }
+  .card {
+    grid-row: 1/2;
+    margin-left: 5px;
+    margin-right: -10px;
+    padding-right: 0;
+  }
+  .card :hover ~ h4 {
+    opacity: 1;
+    transition: ease-in;
+    padding-top: 1rem;
+    text-decoration: underline;
+    transition-duration: 0.2s;
+  }
+  .card h4 {
+    margin-top: -8rem;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+  }
+  .cards {
+    display: block;
+    grid-row: 2/2;
+    margin-top: -5rem;
+    margin-left: 5px;
+    margin-right: -10px;
+    padding-right: 0;
+  }
+  .cards :hover ~ h4 {
+    opacity: 1;
+    transition: ease-in;
+    padding-top: 1rem;
+    text-decoration: underline;
+    transition-duration: 0.1s;
+  }
+  .cards h4 {
+    margin-top: -8rem;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+  }
+  #cards_S {
+    margin-left: 0;
+  }
+  #cards {
+    margin-top: -9rem;
+  }
+  #cardText {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #cardText h2 {
+    border: solid 0.3rem #51068B;
+    padding: 0.5rem;
+  }
+  #cardText :hover {
+    background-color: #51068B;
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1200px) {
   .gallery {
     margin-bottom: 3rem;
     background-image: none;
@@ -999,12 +1084,13 @@ body {
   .content h2 {
     margin-top: 2rem;
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 1.5rem;
   }
   .content li {
     list-style-type: none;
   }
   .content li p {
+    margin-top: 0;
     text-align: center;
   }
   .difference {
@@ -1026,11 +1112,11 @@ body {
     margin-left: 1.2rem;
   }
   .charge h2 {
-    font-size: 3rem;
-    margin-top: -10rem;
+    font-size: 1.5rem;
+    margin-top: -18rem;
   }
   .charge span {
-    font-size: 10rem;
+    font-size: 4.7rem;
   }
   .charge #break-2 {
     display: none;
@@ -1072,15 +1158,12 @@ body {
   }
   .charge h2 {
     font-size: 3rem;
-    margin-top: -10rem;
+    margin-top: -29.3rem;
   }
   .charge span {
     font-size: 10rem;
   }
   .charge #break-2 {
     display: none;
-  }
-  span:hover {
-    color: #000;
   }
 }/*# sourceMappingURL=main.css.map */

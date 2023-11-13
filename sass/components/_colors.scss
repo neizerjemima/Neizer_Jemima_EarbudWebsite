@@ -46,23 +46,18 @@
     }
 
     .variety {
-        position: absolute;
-        margin: 25rem 0 0 24rem;
-        color: a.$accent-color;
+        margin: 17rem 0 0 11.6rem;
         h2{
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 }
 
 @media screen and (min-width: 1200px) {
-    #variety {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        br {display: block;}
-    }
-
-    img {
-       width: 150%;
+    .variety {
+        margin: 25rem 0 0 24rem;
+        h2{
+            font-size: 3rem;
+        }
     }
 }

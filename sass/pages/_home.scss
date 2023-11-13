@@ -141,12 +141,13 @@
         h2{ 
             margin-top: 2rem; 
             text-align: center;
-            font-size: .5rem;
+            font-size: 1.5rem;
         }
         li{
             list-style-type: none;
 
             p{
+                margin-top: 0;
                 text-align: center;
             }
         }
@@ -172,11 +173,11 @@
     .charge {
         margin-left: 1.2rem;
         h2 {
-            font-size: 3rem;
-            margin-top: -10rem;
+            font-size: 1.5rem;
+            margin-top: -18rem;
         }
         span {
-            font-size: 10rem;
+            font-size: 4.7rem;
         }
         #break-2 { display: none;}
     span:hover { color: #000;}
@@ -184,7 +185,6 @@
 
 
 }
-
 
 @media screen and (min-width: 1200px) {
     .hero-text {
@@ -231,14 +231,13 @@
         // margin-left: 1.2rem;
         h2 {
             font-size: 3rem;
-            margin-top: -10rem;
+            margin-top: -29.3rem;
         }
         span {
             font-size: 10rem;
         }
         #break-2 { display: none;}
     }
-    span:hover { color: #000;}
 
     
 }
