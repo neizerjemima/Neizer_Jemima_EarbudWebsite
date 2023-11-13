@@ -164,7 +164,7 @@ header img {
   margin: 4px 0 17px 4px;
 }
 
-.cart {
+.cart, .login {
   display: none;
 }
 
@@ -238,7 +238,7 @@ header img {
     width: 140%;
     margin: 10px 0 0 10px;
   }
-  .cart {
+  .cart, .login {
     display: block;
   }
   #Nav-Desktop button {
