@@ -12,7 +12,7 @@ header {
     }   
 }
 
-.cart { display: none;}
+.cart,.login { display: none;}
 
 #Nav-Desktop button {
     width: 20px;
@@ -90,7 +90,7 @@ header {
         margin: 10px 0 0 10px;
     }
 
-    .cart { display: block;}
+    .cart,.login { display: block;}
 
    
     #Nav-Desktop button {
