@@ -84,8 +84,7 @@ header {
 
     #header img {  
         margin: 1rem;
-        // width: 48px;
-        // height: 48px;
+        width: 140%;
         margin: 10px 0 0 10px;
     }
 
@@ -111,7 +110,7 @@ header {
 
     #burger-con ul li a { display: inline;}
 
-    #burger-con ul { margin-top: 44px;}
+    #burger-con ul { margin-top: 20px;}
     #Nav-Desktop {
         // grid-row: 1/3;
         padding-left: 0;
@@ -142,7 +141,10 @@ header {
 
 @media screen and (min-width: 1200px) {
 
- 
+    #header img {  
+        width: 70%;
+    }
+
     #burger-con {
         display: block;
         margin-top: 1.5rem;

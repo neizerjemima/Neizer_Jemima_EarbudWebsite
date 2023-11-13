@@ -231,6 +231,7 @@ header img {
 @media screen and (min-width: 768px) {
   #header img {
     margin: 1rem;
+    width: 140%;
     margin: 10px 0 0 10px;
   }
   #Nav-Desktop button {
@@ -252,7 +253,7 @@ header img {
     display: inline;
   }
   #burger-con ul {
-    margin-top: 44px;
+    margin-top: 20px;
   }
   #Nav-Desktop {
     padding-left: 0;
@@ -273,6 +274,9 @@ header img {
   }
 }
 @media screen and (min-width: 1200px) {
+  #header img {
+    width: 70%;
+  }
   #burger-con {
     display: block;
     margin-top: 1.5rem;
