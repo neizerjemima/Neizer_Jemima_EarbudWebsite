@@ -3,12 +3,12 @@
 header {
     #header {
     position: sticky;
-    height: 72px;
+    height: fit-content;
     }
     img {
-        width: 48px;
-        height: 48px;
-        margin: 10px 0 0 10px;
+        width: 70%;
+        margin: 4px 0 17px 4px;
+        
     }   
 }
 
@@ -16,23 +16,12 @@ header {
     width: 20px;
     height: 20px;
     background: url(../images/burger.svg) no-repeat center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
     transition: all .5s ease;
     border: 0;
  }
 
-
- #search {
-    margin-top: 24px;
-    border-radius: 10px;
-    text-align: center;
- }
- 
- #main-logo {
-    margin-top: 10px;
-    width: 90%;
- }
 
  #Nav-Deskop {
     margin-top: 3px;
@@ -82,17 +71,24 @@ header {
     color: a.$accent-color;
 }
 
+#free { 
+    font-size: .7rem;
+    background-color: a.$secondary-color;
+    color: a.$primary-color;
+    text-align: center;
 
+    #freeText { padding: .3rem;}
+}
 
 @media screen and (min-width: 768px) {
-    #header {
-        position: sticky;
-        height: 72px;
-        }
 
-    header img {  
+    #header img {  
         margin: 1rem;
+        // width: 48px;
+        // height: 48px;
+        margin: 10px 0 0 10px;
     }
+
    
     #Nav-Desktop button {
         display: none;

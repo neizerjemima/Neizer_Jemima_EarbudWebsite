@@ -16,7 +16,7 @@
       button.addEventListener("click", hamburgerMenu, false);
   })();
 })();
-
+//Model Viewer
 (() => {
   const earbud = document.querySelector("#earbud");
   const hotspots = document.querySelectorAll(".Hotspot");
@@ -103,13 +103,24 @@
   });
 })();
 
+//X-ray reveal mobile
 
-//This for the hamburger menu
 
-// In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
+//This is for the slide reveal for mobile
+(() => {
+  "use strict";
+  (function () {
+    let reveal = document.querySelector("#full");
+    let appear = document.querySelector("#appear");
 
-//This is for the slide reveal
+    function xrayBuds() {
+      appear.classList.toggle("slide-toggles");
+      reveal.classList .toggle ("expands");
+    }
 
+    reveal.addEventListener("click", xrayBuds, false);
+  })();
+})();
 (() => {
   let imageCon = document.querySelector("#imageCon"),
     drag = document.querySelector(".image-drag"),

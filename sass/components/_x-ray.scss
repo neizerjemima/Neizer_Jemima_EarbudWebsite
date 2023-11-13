@@ -6,8 +6,44 @@
   
   .xray-slider {
     margin-bottom: 40px;
+
+    h2 {
+      grid-column: 1/-1;
+      font-size: 1.3rem;
+      text-align: center;
+      color: a.$accent-color;
+      margin-bottom: 2rem;
+    }
   }
-  @media screen and (min-width: 1200px) {
+  p { 
+    margin-top: -1.3rem;
+    text-align: center;
+    font-size: .9rem;
+  }
+  p:hover { cursor: pointer;}
+
+  #mobile-tablet-view p {
+    transition: all .5s ease;
+   }
+
+  #mobile-tablet-view p.expands {
+    
+    border: solid .3rem a.$accent-color;
+ }
+  #appear {
+    display: none;
+}
+
+#appear.slide-toggles {
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+  
+ 
+
+  @media screen and (min-width: 768px) {
     #mobile-tablet-view {
       display: none;
     }
