@@ -597,6 +597,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
+  animation: change 10s infinite ease-in-out;
 }
 
 .variety {
@@ -608,6 +609,35 @@ body {
   font-size: 0.9rem;
 }
 
+@keyframes change {
+  0% {
+    background-color: #e6e6e6;
+  }
+  12.5% {
+    background-color: #CBE2CB;
+  }
+  25% {
+    background-color: #FBEF80;
+  }
+  37.5% {
+    background-color: #ead514;
+  }
+  50% {
+    background-color: #FF8A8C;
+  }
+  62.5% {
+    background-color: #ead514;
+  }
+  75% {
+    background-color: #FBEF80;
+  }
+  87.5% {
+    background-color: #CBE2CB;
+  }
+  100% {
+    background-color: #e6e6e6;
+  }
+}
 @media screen and (min-width: 768px) {
   #variety {
     font-size: 2.5rem;
@@ -621,7 +651,7 @@ body {
   }
   .variety {
     position: absolute;
-    margin: 28rem 0 0 24rem;
+    margin: 25rem 0 0 24rem;
     color: #51068B;
   }
   .variety h2 {
