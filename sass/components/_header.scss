@@ -12,6 +12,8 @@ header {
     }   
 }
 
+.cart { display: none;}
+
 #Nav-Desktop button {
     width: 20px;
     height: 20px;
@@ -87,6 +89,8 @@ header {
         width: 140%;
         margin: 10px 0 0 10px;
     }
+
+    .cart { display: block;}
 
    
     #Nav-Desktop button {
